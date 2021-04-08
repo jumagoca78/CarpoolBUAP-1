@@ -9,6 +9,6 @@ Integrantes:
   - Jesús Alexis Ramírez Navor
   - Hugo Alexis Chiquito Onofre
   - María
-  - Mario
+  - Mario A. Núñez Zavala
 
 Probando Github Desktop
