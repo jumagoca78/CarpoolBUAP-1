@@ -5,10 +5,10 @@ Este proyecto esta siendo desarrollado para uso exclusivo de los estudiantes de 
 Versión actual: 0.0
 
 Integrantes:
-  - Emmanuel
-  - Jesús Alexis Ramírez Navor
+  - Emmanuel Revuelta Rodríguez
   - Hugo Alexis Chiquito Onofre
-  - María
+  - Jesús Alexis Ramírez Navor
+  - María Limón García
   - Mario A. Núñez Zavala
 
 Probando Github Desktop
