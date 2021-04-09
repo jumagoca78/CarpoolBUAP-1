@@ -46,7 +46,7 @@
 
         <ul class="nav nav-justified py-2 nav-pills">
    
-        <?php if(isset($_GET["vista"])): ?>      
+        <?php if(isset($_GET["vista"])): ?>   <!-- "Pinta" el botón dependiendo de dónde (vista) estemos -->   
 
           <?php if($_GET["vista"] == "registrar-usuario"): ?>   
             <li class="nav-item">
@@ -83,7 +83,7 @@
     </div>
     
     <!----------------------------------
-    Content/Request View
+    Content/Requested View
     ----------------------------------->    
     <div class="container-fluid">
       <div class="container py-5 text-center">
