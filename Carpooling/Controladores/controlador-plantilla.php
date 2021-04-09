@@ -3,7 +3,7 @@
   class ControladorPlantilla
   {
     /*-----------------------------
-    Template call
+    Calls the template file
     -----------------------------*/
     public function ctrGetPlantilla()
     {
