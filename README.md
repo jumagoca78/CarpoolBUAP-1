@@ -2,7 +2,7 @@
 Equipo de desarrollo Carpool BUAP
 Este proyecto esta siendo desarrollado para uso exclusivo de los estudiantes de la Benemérita Universidad Autónoma de Puebla.
 
-Versión actual: 0.0
+Versión actual: 0.1
 
 Integrantes:
   - Emmanuel Revuelta Rodríguez
@@ -10,5 +10,3 @@ Integrantes:
   - Jesús Alexis Ramírez Navor
   - María Limón García
   - Mario A. Núñez Zavala
-
-Probando Github Desktop
