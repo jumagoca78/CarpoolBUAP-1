@@ -6,7 +6,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Pedido</title>
+    <title>CarPoolBUAP</title>
  
     <!----------------------------------
     CSS PLUGINS 
