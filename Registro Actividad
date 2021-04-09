@@ -14,3 +14,26 @@ Si hubiese trabajado con el código haría lo siguiente:
 Fin del reporte de Jesús Alexis Ramírez Navor.
 -------------------------------------------------------------------------------------------------------------------------------------
 Recuerden usar esta plantilla de este modo para evitar confusiones y mejorar nuestra organización.
+  
+-------------------------------------------------------------------------------------------------------------------------------------
+Jueves 8 de Abril de 2021, 7:00 PM - 7:37 PM
+Versión 0.1
+N. Zavala Mario A.
+
+Este día cree la carpeta de trabajo y añadí la estructura básica para trabajar bajo el patrón MVC.
+También agrega una "muesca" sobre como ha de entenderse los primeros indicios de desarrollo de las historias de usuario 1 y 2.
+
+Mi trabajo en código se remitió a lo siguiente:
+
+1.- Creación de carpetas para los controladores, modelos y Vistas.
+    - Cree los archivos que permiten una comunicación integra (aunque aún limitida, eso sí) entre lo que solicita el usuario y lo que 
+      obtiene.
+      *La vista que se visualiza al entrar a la página, es tríada por el controlador-plantilla sin invocar al modelo. Esto no es parte 
+      de la interacción del usuario (recién entro).
+    - Agregué algunos archivos menores que serán editados o incluso eliminados para dar pie a lo que se proponga en la gestión en 
+      equipo.
+2.- Incluí el uso del framework bootstrap que sirve como mero concepto visual. Posiblemente será reemplazado o quizás, trabajado de 
+    una manera distinta por mis compañeros.
+    
+Fin del reporte de N. Zavala Mario A.
+-------------------------------------------------------------------------------------------------------------------------------------
