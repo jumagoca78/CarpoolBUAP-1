@@ -37,3 +37,20 @@ Mi trabajo en código se remitió a lo siguiente:
     
 Fin del reporte de N. Zavala Mario A.
 -------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Viernes 9 de Abril de 2021, 6:10 PM - 7:15 PM
+Versión 0.2
+Jesús Alexis Ramírez Navor
+
+Creación de la página principal que nos llevará a las vistas del login y el register.
+
+1.- Archivo plantilla.php
+    - Realice cambios en toda la plantilla eliminando por completo lo que había aquí para generar aquí mismo nuestra página principal.
+    - Cambie su nombre a principal.phhp
+    - Contiene información general de la aplicación
+    - Un botón para iniciar sesión que nos llevaria al formulario
+    - Un pequeño apartado para pedir el correo y registrarse
+    
+Fin del reporte de Jesús Alexis Ramírez Navor.
+-------------------------------------------------------------------------------------------------------------------------------------

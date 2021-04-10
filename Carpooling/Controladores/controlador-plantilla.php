@@ -7,7 +7,7 @@
     -----------------------------*/
     public function ctrGetPlantilla()
     {
-      include "Vistas/plantilla.php";
+      include "Vistas/principal.php";
     }
 
     /*-----------------------------
