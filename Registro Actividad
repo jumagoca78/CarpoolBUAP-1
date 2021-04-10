@@ -47,7 +47,7 @@ Creación de la página principal que nos llevará a las vistas del login y el r
 
 1.- Archivo plantilla.php
     - Realice cambios en toda la plantilla eliminando por completo lo que había aquí para generar aquí mismo nuestra página principal.
-    - Cambie su nombre a principal.phhp
+    - Cambie su nombre a principal.php
     - Contiene información general de la aplicación
     - Un botón para iniciar sesión que nos llevaria al formulario
     - Un pequeño apartado para pedir el correo y registrarse
