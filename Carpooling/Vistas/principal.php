@@ -35,10 +35,13 @@
   <!-- Information text -->
   <section class="bg-light text-center">
     <div class="container">
-      <h3>El carpooling es el uso compartido de un automóvil privado o de alguna compañía para trasladarse
-        en un mismo viaje, con un conductor y uno o más pasajeros en horarios y rutas comunes establecidas
-        por ambos sujetos con distintas modalidades para acordar el viaje, ya sea por medio de una aplicación
-        móvil o de manera personal.</h3>
+      <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
+        <h3>¿Qué es el carpooling?</h3>
+        <p class="lead mb-0">El carpooling es el uso compartido de un automóvil privado para trasladarse
+          en un mismo viaje, con un conductor y uno o más pasajeros en horarios y rutas comunes establecidas
+          por ambos sujetos con distintas modalidades para acordar el viaje.
+        </p>
+        </div>
     </div>
     <br>
   </section>
