@@ -1,11 +1,11 @@
 <?php
-  session_start();
+session_start();
 ?>
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
     <title>Carpool BUAP</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,83 +15,84 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <link href="css/principal.css" rel="stylesheet">
-  </head>
-  <body>
-  
-  <!-- Navigation bar -->
-  <nav class="navbar navbar-light bg-light static-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Carpool BUAP</a>
-      <a class="btn btn-primary" href="#">Iniciar Sesión</a>
-    </div>
-  </nav>
+</head>
+<body>
 
-  <!-- Image overlay -->
-  <header class="masthead text-black text-center">
+<!-- Navigation bar -->
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Carpool BUAP</a>
+        <a class="btn btn-primary" href="#">Iniciar Sesión</a>
+    </div>
+</nav>
+
+<!-- Image overlay -->
+<header class="masthead text-black text-center">
     <div class="overlay"></div>
-  </header>
-  <br>
+</header>
+<br>
 
-  <!-- Information text -->
-  <section class="bg-light text-center">
+<!-- Information text -->
+<section class="bg-light text-center">
     <div class="container">
-      <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
-        <h3>¿Qué es el carpooling?</h3>
-        <p class="lead mb-0">El carpooling es el uso compartido de un automóvil privado para trasladarse
-          en un mismo viaje, con un conductor y uno o más pasajeros en horarios y rutas comunes establecidas
-          por ambos sujetos con distintas modalidades para acordar el viaje.
-        </p>
-        </div>
-    </div>
-    <br>
-  </section>
-
-  <!-- Information Grid -->
-  <section class="bg-light text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <h3>Ayuda a la comunidad</h3>
-            <p class="lead mb-0">Reducir tiempo y costo de traslado de una comunidad universitaria cerrada.
+        <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <h3>¿Qué es el carpooling?</h3>
+            <p class="lead mb-0">El carpooling es el uso compartido de un automóvil privado para trasladarse
+                en un mismo viaje, con un conductor y uno o más pasajeros en horarios y rutas comunes establecidas
+                por ambos sujetos con distintas modalidades para acordar el viaje.
             </p>
-          </div>
         </div>
-        <div class="col-lg-4">
-          <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <h3>Disminuir la contaminación</h3>
-            <p class="lead mb-0">Reducir gases de efecto invernadero generados por el uso del automóvil.​
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="mx-auto mb-lg-0 mb-lg-3">
-            <h3>Convivencia</h3>
-            <p class="lead mb-0">Promover la convivencia entre los diferentes miembros de la comunidad.​</p>
-          </div>
-        </div>
-      </div>
     </div>
     <br>
-  </section>
+</section>
 
-  <section class="features-icons bg-light text-center">
+<!-- Information Grid -->
+<section class="bg-light text-center">
     <div class="container">
-      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-        <form>
-          <div class="form-row">
-            <div class="col-12 col-md-9 mb-2 mb-md-0">
-              <input type="email" class="form-control form-control-lg" placeholder="Introduce tu correo institucional...">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <h3>Ayuda a la comunidad</h3>
+                    <p class="lead mb-0">Reducir tiempo y costo de traslado de una comunidad universitaria cerrada.
+                    </p>
+                </div>
             </div>
-            <div class="col-12 col-md-3">
-              <button type="submit" class="btn btn-block btn-lg btn-primary">¡Regístrate!</button>
+            <div class="col-lg-4">
+                <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <h3>Disminuir la contaminación</h3>
+                    <p class="lead mb-0">Reducir gases de efecto invernadero generados por el uso del automóvil.​
+                    </p>
+                </div>
             </div>
-          </div>
-        </form>
-      </div>
+            <div class="col-lg-4">
+                <div class="mx-auto mb-lg-0 mb-lg-3">
+                    <h3>Convivencia</h3>
+                    <p class="lead mb-0">Promover la convivencia entre los diferentes miembros de la comunidad.​</p>
+                </div>
+            </div>
+        </div>
     </div>
     <br>
-  </section>
+</section>
 
-  </body>
+<section class="features-icons bg-light text-center">
+    <div class="container">
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form>
+                <div class="form-row">
+                    <div class="col-12 col-md-9 mb-2 mb-md-0">
+                        <input type="email" class="form-control form-control-lg"
+                               placeholder="Introduce tu correo institucional...">
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <button type="submit" class="btn btn-block btn-lg btn-primary">¡Regístrate!</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+</section>
+
+</body>
 </html>
