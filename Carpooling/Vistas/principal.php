@@ -13,6 +13,7 @@ session_start();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
     <link href="css/principal.css" rel="stylesheet">
 </head>
@@ -22,7 +23,7 @@ session_start();
 <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
         <a class="navbar-brand" href="#">Carpool BUAP</a>
-        <a class="btn btn-primary" href="#">Iniciar Sesión</a>
+        <a id="btn-abrir-popup" class="btn btn-primary btn-abrir-popup">Iniciar Sesión</a>
     </div>
 </nav>
 
@@ -93,6 +94,23 @@ session_start();
     </div>
     <br>
 </section>
+
+<div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h3>Iniciar Sesión</h3>
+        <h4>Recuerda que debes usar tus credenciales universitarias.</h4>
+        <form action="">
+            <div class="contenedor-inputs">
+                <input type="email" placeholder="Correo Institucional">
+                <input type="password" placeholder="Contraseña">
+            </div>
+            <input type="submit" class="btn-submit" value="Iniciar Sesión">
+        </form>
+    </div>
+</div>
+
+<script src="js/popup.js"></script>
 
 </body>
 </html>
