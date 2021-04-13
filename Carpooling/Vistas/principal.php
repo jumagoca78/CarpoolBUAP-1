@@ -110,6 +110,45 @@ session_start();
     </div>
 </div>
 
+<!-- FORMULARIO REGISTO -->
+<h3>Regístrate en CARPOOLBUAP!</h3>
+<form action="">
+    <h4>Datos personales:</h4>
+    <input type="text" placeholder="Nombre(s)">
+    <input type="text" placeholder="Apellidos">
+    <input type="number" placeholder="Edad">
+    
+    <label for="sexo">Sexo:</label>
+    <select id="sexo">
+        <option value="mujer">Mujer</option>
+        <option value="hombre">Hombre</option>
+    </select>
+
+    <input type="text" placeholder="Matricula">
+    <input type="email" placeholder="Correo (correo@alumno.buap.mx)">
+    
+    <input id="chbx_conductor" type="checkbox" value="conductor"><label for="chbx_conductor">Conductor</label>
+    <input id="chbx_pasajero" type="checkbox" value="pasajero"><label for="chbx_pasajero">Pasajero</label>
+
+    <h4>Datos automóvil</h4>
+    <input type="text" placeholder="Modelo">
+    <input type="text" placeholder="Marca">
+    <input type="text" placeholder="Color">
+    <input type="text" placeholder="Antigüedad">
+    <input type="text" placeholder="Número de placas">
+    
+
+    <h5>Carga la documentación de tu vehículo</h5>
+    <label for="licenciaConducir">Licencia Conducir</label>
+    <input type="file" id="licenciaConducir" name="LicenciaConducir" accept="image/png, .jpeg, .jpg, image/gif">
+    <label for="seguroCobertura">Seguro cobertura</label>
+    <input type="file" id="seguroCobertura" name="SeguroCobertura" accept="image/png, .jpeg, .jpg, image/gif">
+    <label for="tarjetaCirculacion">Tarjeta Circulacion</label>
+    <input type="file" id="tarjetaCirculacion" name="tarjetaCirculacion" accept="image/png, .jpeg, .jpg, image/gif">
+    
+    <input type="submit" value="Enviar datos">
+</form>
+
 <script src="js/popup.js"></script>
 
 </body>
