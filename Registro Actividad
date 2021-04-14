@@ -96,7 +96,7 @@ Versión 0.4
 Hugo Alexos Chiquito Onofre
 
 1.- Se creo el archivo registrar-usuario.php
-    -Se creo el formulaio de recopilación de dato con validación.
+    - Se creo el formulaio de recopilación de dato con validación.
 
 No logré terminar mi tarea indicada a tiempo, queda pendiente el formulario de registro de 
 automóvil, así como el script necesario para el manejo de el formulario oculto a través
@@ -104,8 +104,16 @@ de los checkbox.
 Fin del reporte de Hugo Alexis Chiquito Onofre
 -------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------
-Martes 13 de Abril de 2021, 1:15 pm - 
+Martes 13 de Abril de 2021, 1:15 pm - 3:00 pm
 Version 0.5
-Hugo Alexis Chiquito Onofre
+Hugo Alexis Chiquito Onofre y Jesús Alexis Ramírez Navor
 
-Probando Github Desktop por Hugo
+1.- Se creo el archivo registro.css
+    - Creación de los estilos para el formulario de registro
+
+2.- Se creo el archivo registro.js
+    - Intentó de lograr que cuando se clickea la checkbox de conductor se muestre el registro del resto de datos
+
+Aún no se ha terminado el js ni el formulario, se necesita más trabajoy probablemente ayuda.
+Fin del reporte de Hugo Alexis Chiquito Onofre y Jesús Alexis Ramírez Navor
+-------------------------------------------------------------------------------------------------------------------------------------

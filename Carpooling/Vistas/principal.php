@@ -79,7 +79,7 @@ session_start();
 <section class="features-icons bg-light text-center">
     <div class="container">
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form>
+            <form action="vistas/registro.php">
                 <div class="form-row">
                     <div class="col-12 col-md-9 mb-2 mb-md-0">
                         <input type="email" class="form-control form-control-lg"
@@ -106,49 +106,6 @@ session_start();
                 <input type="password" placeholder="Contraseña">
             </div>
             <input type="submit" class="btn-submit" value="Iniciar Sesión">
-        </form>
-    </div>
-</div>
-
-<!-- FORMULARIO REGISTO -->
-<div class="overlay" id="overlay2">
-    <div class="popup" id="popup2">
-    <h3>Regístrate en CARPOOLBUAP!</h3>
-        <form action="">
-            <h4>Datos personales:</h4>
-            <input type="text" placeholder="Nombre(s)">
-            <input type="text" placeholder="Apellidos">
-            <input type="number" placeholder="Edad">
-            
-            <label for="sexo">Sexo:</label>
-            <select id="sexo">
-                <option value="mujer">Mujer</option>
-                <option value="hombre">Hombre</option>
-            </select>
-
-            <input type="text" placeholder="Matricula">
-            <input type="email" placeholder="Correo (correo@alumno.buap.mx)">
-            
-            <input id="chbx_conductor" type="checkbox" value="conductor"><label for="chbx_conductor">Conductor</label>
-            <input id="chbx_pasajero" type="checkbox" value="pasajero"><label for="chbx_pasajero">Pasajero</label>
-
-            <h4>Datos automóvil</h4>
-            <input type="text" placeholder="Modelo">
-            <input type="text" placeholder="Marca">
-            <input type="text" placeholder="Color">
-            <input type="text" placeholder="Antigüedad">
-            <input type="text" placeholder="Número de placas">
-            
-
-            <h5>Carga la documentación de tu vehículo</h5>
-            <label for="licenciaConducir">Licencia Conducir</label>
-            <input type="file" id="licenciaConducir" name="LicenciaConducir" accept="image/png, .jpeg, .jpg, image/gif">
-            <label for="seguroCobertura">Seguro cobertura</label>
-            <input type="file" id="seguroCobertura" name="SeguroCobertura" accept="image/png, .jpeg, .jpg, image/gif">
-            <label for="tarjetaCirculacion">Tarjeta Circulacion</label>
-            <input type="file" id="tarjetaCirculacion" name="tarjetaCirculacion" accept="image/png, .jpeg, .jpg, image/gif">
-            
-            <input type="submit" value="Enviar datos">
         </form>
     </div>
 </div>
