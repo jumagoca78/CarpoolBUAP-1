@@ -92,7 +92,7 @@ session_start();
 </section>
 
 
-<!-- pop-up -->
+<!-- login pop-up -->
 
 <div class="overlay" id="overlay">
     <div class="popup" id="popup">
