@@ -1,5 +1,8 @@
-var chechkboxConductor = document.getElementById('conductorCheck'),
+/* Handles the data driver visibility */
+
+var mostrarDatos = document.getElementById('conductorCheck'),
     menu = document.getElementById('conductorDiv');
+    cerrarDatos = document.getElementById('pasajero');      
 
 mostrarDatos.addEventListener('click', function (e) {
     e.preventDefault();
@@ -9,4 +12,4 @@ mostrarDatos.addEventListener('click', function (e) {
 cerrarDatos.addEventListener('click', function (e) {
     e.preventDefault();
     menu.classList.remove('active');
-})
+});
