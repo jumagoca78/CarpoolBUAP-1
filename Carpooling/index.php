@@ -1,17 +1,17 @@
 <?php
 
-	//|••••••••••••••••••••••••••••••••••••••••
+	//|â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢
 	//|	:::::: Documento PHP :::::::
-	//|••••••••••••••••••••••••••••••••••••••••
+	//|â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢
 
 	/*
 		Estudiantes
-		|Escuela: Benemérita Universidad Autónoma de Puebla
-		|Estudiantes:	Emmanuel Revuelta Rodríguez
+		|Escuela: BenemÃ©rita Universidad AutÃ³noma de Puebla
+		|Estudiantes:	Emmanuel Revuelta RodrÃ­guez
 				Hugo Alexis Chiquito Onofre
-				Jesús Alexis Ramírez Navor
-				María García Limón
-				Mario A. Núñez Zavala
+				JesÃºs Alexis RamÃ­rez Navor
+				MarÃ­a GarcÃ­a LimÃ³n
+				Mario A. NÃºÃ±ez Zavala
 		|Facebook: ----
 		|Twitter: ----
 		|Linked in: ----
@@ -20,34 +20,29 @@
 		Documento
 		|Fecha-documento: 2021-04-08
 			
-		Descripción
-		    	Implementar un programa piloto en la Benemérita
-			Universidad Autónoma de Puebla (BUAP),
-			específicamente en el campus de Ciudad Universitaria,
+		DescripciÃ³n
+		    	Implementar un programa piloto en la BenemÃ©rita
+			Universidad AutÃ³noma de Puebla (BUAP),
+			especÃ­ficamente en el campus de Ciudad Universitaria,
 		        un sistema de auto compartido (carpooling).
-			Se requiere entonces desarrollar una aplicación orientada a la web
-			que permita dicha implementación.
+			Se requiere entonces desarrollar una aplicaciÃ³n orientada a la web
+			que permita dicha implementaciÃ³n.
+
                 Consideraciones
-			A través de 12 historias de usuario, deducir la dificultad en cada una
-			a través del método planning poker, para luego establecer el tiempo
-			de desarrollo total de la aplicación, a partir de terminar la primera.		
-	        Solución propuesta
+			A travÃ©s de 12 historias de usuario, deducir la dificultad en cada una
+			a travÃ©s del mÃ©todo planning poker, para luego establecer el tiempo
+			de desarrollo total de la aplicaciÃ³n, a partir de terminar la primera.		
+	        SoluciÃ³n propuesta
 			Historias de usuario 1 y 2.
-			  Página principal con información general del servicio; con una página de login 
+			  PÃ¡gina principal con informaciÃ³n general del servicio; con una pÃ¡gina de login 
                           y una de registro que solo admite correos institucionales.
 		Disign
-	   		1. Se crea un formulario que recoge los datos de registro y se añade un botón
-			   que confirma la operación de alta.         	 
+	   		1. Se crea un formulario que recoge los datos de registro y se aÃ±ade un botÃ³n
+			   que confirma la operaciÃ³n de alta.         	 
 	
         */	
-	
-	# En nuestro archivo index.php, mostraremos las salidas al usuario
-	# así como tambíen las respuestas emitidas por el controlador a sus solicitudes.
         
-        require_once "Controladores/controlador-plantilla.php";
-        //require_once "Controladores/controlador-formularios.php";
-        require_once "Modelos/modelo-plantilla.php";
-        //require_once "Modelos/modelo-formularios.php";
+        require_once "Controllers/main-controller.php"; // The controller that opens the main view is included.
           
-        $ctr_plantilla = new ControladorPlantilla();
-	$ctr_plantilla -> ctrGetPlantilla();
+        $main_ctr = new MainController(); // Object declaration
+	$main_ctr -> ctrIncludePrincipal(); // The previously created instance invokes the method for this task.
