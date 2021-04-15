@@ -84,9 +84,10 @@ session_start();
                 <label for="tarjetaCirculacion">Tarjeta Circulacion</label>
                 <input type="file" id="tarjetaCirculacion" form-control-file name="tarjetaCirculacion"
                        accept="image/png, .jpeg, .jpg, image/gif"><br><br>
+            </div>
+            <div class="contenedor-inputs form-group">
                 <input type="submit" class="btn btn-primary" value="Registrarme"><br>
             </div>
-
         </form>
     </div>
 </section>
