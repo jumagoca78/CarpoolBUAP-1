@@ -10,12 +10,12 @@
   class MainController
   {
     /*-----------------------------
-    Includes the main.php file with
+    Includes the principal.php file with
     registration and login option
     -----------------------------*/
-    public function ctrIncludeMain()
+    public function ctrIncludePrincipal()
     {
-      include "Views/main.php";
+      include "Views/principal.php";
     } 
 
   }	// MainController end
