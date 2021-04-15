@@ -111,6 +111,7 @@ session_start();
 </div>
 
 <script src="js/popup.js"></script>
-
+<script src="js/validate-email.js"></script>
+    
 </body>
 </html>
