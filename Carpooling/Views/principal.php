@@ -79,11 +79,11 @@ session_start();
 <section class="features-icons bg-light text-center">
     <div class="container">
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form action="Views/registro.php">
+            <form action="Views/registro.php" onsubmit="return verify();" method="post">
                 <div class="form-row">
                     <div class="col-12 col-md-9 mb-2 mb-md-0">
                         <input type="email" class="form-control form-control-lg"
-                               placeholder="Introduce tu correo institucional...">
+                               placeholder="Introduce tu correo institucional..." id="reg_correoIns" name="correo_ins" required / >
                     </div>
                     <div class="col-12 col-md-3">
                         <button type="submit" class="btn btn-block btn-lg btn-primary">¡Regístrate!</button>
@@ -102,8 +102,8 @@ session_start();
         <h4>Recuerda que debes usar tus credenciales universitarias.</h4>
         <form action="">
             <div class="contenedor-inputs">
-                <input type="email" placeholder="Correo Institucional">
-                <input type="password" placeholder="Contraseña">
+                <input type="email" placeholder="Correo Institucional" />
+                <input type="password" placeholder="Contraseña" />
             </div>
             <input type="submit" class="btn-submit" value="Iniciar Sesión">
         </form>
