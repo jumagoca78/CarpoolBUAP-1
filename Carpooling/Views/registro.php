@@ -47,7 +47,7 @@ session_start();
               
               </select><br>
                 <input type="text" class="form-control2" placeholder="Matricula"><br>
-                <input type="email" class="form-control2" placeholder="Correo (correo@alumno.buap.mx)"><br>
+                <input type="email" class="form-control2" placeholder="Correo (correo@alumno.buap.mx)" value="<?php echo $_POST['correo_ins']; ?>" /><br>
                 <label>Elige tu tipo de usuario: </label><br>
 
                 <!-- The user is identified as -->
