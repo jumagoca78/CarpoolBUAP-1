@@ -33,30 +33,38 @@ session_start();
         <h3>Regístrate!</h3>
         <h4>Datos personales:</h4>
         <form action="">
-            <div class="contenedor-inputs form-group">
-                <input type="text" class="form-control2" placeholder="Nombre(s)"><br>
-                <input type="text" class="form-control2" placeholder="Apellidos"><br>
-                <input type="number" class="form-control2" placeholder="Edad"><br>
-                <select id="sexo" class="form-control2">
-                    <option value="mujer">Mujer</option>
-                    <option value="hombre">Hombre</option>
-                </select><br>
+             
+        <!-- User data -->  
+             
+          <div class="contenedor-inputs form-group">
+            <input type="text" class="form-control2" placeholder="Nombre(s)"><br>
+            <input type="text" class="form-control2" placeholder="Apellidos"><br>
+            <input type="number" class="form-control2" placeholder="Edad"><br>
+
+            <select id="sexo" class="form-control2">
+              <option value="mujer">Mujer</option>
+              <option value="hombre">Hombre</option>
+              
+              </select><br>
                 <input type="text" class="form-control2" placeholder="Matricula"><br>
                 <input type="email" class="form-control2" placeholder="Correo (correo@alumno.buap.mx)"><br>
                 <label>Elige tu tipo de usuario: </label><br>
+
+                <!-- The user is identified as -->
+
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="" id="conductorCheck">
-                    <label class="form-check-label" for="flexCheckConductor">
-                        Conductor
-                    </label>
+                    <input class="form-check-input" type="checkbox" id="conductorCheck"> <!--*-->
+                    <label class="form-check-label" for="flexCheckConductor">Conductor</label>
                 </div>
+
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" value="" id="pasajero">
-                    <label class="form-check-label" for="flexCheckPasajero">
-                        Pasajero
-                    </label>
+                    <label class="form-check-label" for="flexCheckPasajero">Pasajero</label>
                 </div>
             </div>
+
+            <!-- This data is only displayed when the user selects driver as their option -->
+
             <div class="contenedor-inputs form-group conductor" id="conductorDiv">
                 <h4>Datos automóvil</h4>
                 <input type="text" class="form-control2" placeholder="Modelo"><br>
@@ -78,9 +86,13 @@ session_start();
                        accept="image/png, .jpeg, .jpg, image/gif"><br><br>
                 <input type="submit" class="btn btn-primary" value="Registrarme"><br>
             </div>
+
         </form>
     </div>
 </section>
+
+
+<!-- pop-up -->
 
 <div class="overlay" id="overlay">
     <div class="popup" id="popup">
