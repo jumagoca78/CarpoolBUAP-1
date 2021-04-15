@@ -117,3 +117,39 @@ Hugo Alexis Chiquito Onofre y Jesús Alexis Ramírez Navor
 Aún no se ha terminado el js ni el formulario, se necesita más trabajoy probablemente ayuda.
 Fin del reporte de Hugo Alexis Chiquito Onofre y Jesús Alexis Ramírez Navor
 -------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Jueves 15 de Abril de 2021, 7:35 PM - 12:06 PM
+Versión 0.6
+N. Zavala Mario A.
+
+Hoy llevé a cabo el trabajo pendiente en la vsta de registro para la Visiblidad y ocultamiento de los datos con respecto al conductor.
+Validé el correo que esté en un formato correcto al cuando el usuario lo proporcione EN la vista "principal.php".
+Al obtener el correo, este ya se inserta exitosamente en el campo del lado de la vista de registro correctamente.
+También trabajé en el modelo relacional de la bbdd.
+
+Código utilizado para estas tareas:
+
+1.- Archivo "registro.css" y reutilización del estilo en el archivo "principal.css".
+2.- Archivo "registro.js". En él se obtiene el elemento html a afectar.
+3.- Archivo "validate-email.js" en el cuál se 'dispara' el evente de verificaión de correo.
+4.- sentencia php echo en el archivo "registro.php" en el input 'conductor' en su atributo value. 
+
+Inconsistencias econtradas:
+
+1.- Habrá que prestar atención a porqué los checkbox de pasajero y conductor no se "pintan" al ser seleccionados.
+    Sobre ellos se llevan a cabo los eventos de mostrar y ocultar los datos del conductor. Sospecho que sea eso.
+    
+Aportaciones extra "oficiales":
+
+1.- Cree una nueva carpeta llamada "Reports" en el que coloco una aún más detallada explicación de lo que se hizo 
+    hoy para mis compañeros que puede resultarles útil.
+    * Habrá que conversarlo con Jesús si es que autoriza su permanencia en el repositorio.
+
+Observaciones:
+
+1.- Estoy seguro que no dejé errores en el código, pero estaré muy al pendiente para corregirlas si se sucitan.
+
+Fin del reporte de N. Zavala Mario A..
+-------------------------------------------------------------------------------------------------------------------------------------
