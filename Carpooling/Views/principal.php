@@ -79,7 +79,7 @@ session_start();
 <section class="features-icons bg-light text-center">
     <div class="container">
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form action="vistas/registro.php">
+            <form action="Views/registro.php">
                 <div class="form-row">
                     <div class="col-12 col-md-9 mb-2 mb-md-0">
                         <input type="email" class="form-control form-control-lg"
