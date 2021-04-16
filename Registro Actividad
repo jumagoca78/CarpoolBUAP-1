@@ -124,9 +124,9 @@ Jueves 15 de Abril de 2021, 7:35 PM - 12:06 PM
 Versión 0.6
 N. Zavala Mario A.
 
-Hoy llevé a cabo el trabajo pendiente en la vsta de registro para la Visiblidad y ocultamiento de los datos con respecto al conductor.
-Validé el correo que esté en un formato correcto al cuando el usuario lo proporcione EN la vista "principal.php".
-Al obtener el correo, este ya se inserta exitosamente en el campo del lado de la vista de registro correctamente.
+Hoy llevé a cabo el trabajo pendiente en la vista de registro para la Visiblidad y ocultamiento de los datos con respecto al conductor.
+Validé el correo que esté en un formato correcto cuando el usuario lo proporcione EN la vista "principal.php".
+Al obtener el correo, este ya se inserta exitosamente en el campo del lado de la vista de registro.
 También trabajé en el modelo relacional de la bbdd.
 
 Código utilizado para estas tareas:
@@ -150,6 +150,30 @@ Aportaciones extra "oficiales":
 Observaciones:
 
 1.- Estoy seguro que no dejé errores en el código, pero estaré muy al pendiente para corregirlas si se sucitan.
+
+Fin del reporte de N. Zavala Mario A..
+-------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Jueves 15 de Abril de 2021, 2:25 PM - 3:06 PM / 7:00 PM - 10:45PM 
+Versión 0.7
+N. Zavala Mario A.
+
+Hoy resolví el problema de seleccionar efectivamente el checkbox de ambos tipos de usuario: pasajero y chofer.
+Recibí ayuda de mi lider de desarrollo, Jesús; hice varias pruebas y tuve una interrupción de 4:34 min!
+En un principio, ideé una forma muy diferente de hacerlo y en el proceso aprendí varias cosas.
+Satisfecho por lo realizado hoy.
+
+Código utilizado para estas tareas:
+
+1.- En el archivo "registro.css" se suprimieron las reglas css de visibilidad en la sección de conductor.
+2.- En el archivo "registro.js" se decidió por intervenirlo con código jQuery en vez de JS puro.
+3.- sentencia if php en el archivo "registro.php" en el input 'conductor' en su atributo value para evitar una 
+    anomalía en el arreglo asociado POST.     
+    
+Pendientes:
+ 
+1.- No he validado el formato del correo a @alumno.buap.mx 
 
 Fin del reporte de N. Zavala Mario A..
 -------------------------------------------------------------------------------------------------------------------------------------
