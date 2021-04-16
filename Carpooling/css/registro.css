@@ -1,13 +1,5 @@
 /* This was included in version 0.5 and is for driver data. */
 
-.conductor {
-    visibility: hidden;
-}
-
-.conductor.active {
-    visibility: visible;
-}
-
 .form-control2 {
     border-radius: 25px;
     justify-content: center;
