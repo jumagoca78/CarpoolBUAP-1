@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,18 +43,18 @@ session_start();
               
               </select><br>
                 <input type="text" class="form-control2" placeholder="Matricula"><br>
-                <input type="email" class="form-control2" placeholder="Correo (correo@alumno.buap.mx)" value="<?php echo $_POST['correo_ins']; ?>" /><br>
+                <input type="email" class="form-control2" placeholder="Correo (correo@alumno.buap.mx)" value="<?php if( isset($_POST['correo_ins']) ) echo $_POST['correo_ins']; ?>" /><br>
                 <label>Elige tu tipo de usuario: </label><br>
 
                 <!-- The user is identified as -->
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="conductorCheck"> <!--*-->
+                    <input class="form-check-input check-btn" type="checkbox" id="conductorCheck"> 
                     <label class="form-check-label" for="flexCheckConductor">Conductor</label>
                 </div>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="" id="pasajero">
+                    <input class="form-check-input check-btn" type="checkbox" value="" id="pasajero">
                     <label class="form-check-label" for="flexCheckPasajero">Pasajero</label>
                 </div>
             </div>
