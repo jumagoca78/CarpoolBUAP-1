@@ -35,14 +35,14 @@
           <div class="contenedor-inputs form-group">
             <input type="text" class="form-control2" placeholder="Nombre(s)"><br>
             <input type="text" class="form-control2" placeholder="Apellidos"><br>
-            <input type="number" class="form-control2" placeholder="Edad"><br>
+            <input type="number" class="form-control2" placeholder="Edad" min="18" max="110"><br>
 
             <select id="sexo" class="form-control2">
               <option value="mujer">Mujer</option>
               <option value="hombre">Hombre</option>
               
               </select><br>
-                <input type="text" class="form-control2" placeholder="Matricula"><br>
+                <input type="number" class="form-control2" placeholder="Matricula" min="000000002" max="300000000"><br>
                 <input type="email" class="form-control2" placeholder="Correo (correo@alumno.buap.mx)" value="<?php if( isset($_POST['correo_ins']) ) echo $_POST['correo_ins']; ?>" /><br>
                 <label>Elige tu tipo de usuario: </label><br>
 
