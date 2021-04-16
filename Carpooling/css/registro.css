@@ -1,7 +1,6 @@
 /* This was included in version 0.5 and is for driver data. */
 
 .form-control2 {
-    border-radius: 25px;
     justify-content: center;
     position: center;
     display: inline-block;
@@ -55,7 +54,7 @@
 
 .popup {
     background: #f8f8f8;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
     font-family: "Montserrat", sans-serif;
     padding: 20px;
     text-align: center;
@@ -136,7 +135,7 @@
     line-height: 40px;
     border: none;
     color: #fff;
-    background: #5e7de3;
+    background: #007bff;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     cursor: pointer;

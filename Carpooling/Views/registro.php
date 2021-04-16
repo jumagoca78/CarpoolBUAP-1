@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8"/>
     <title>Carpool BUAP</title>
@@ -18,7 +18,7 @@
 <!-- Navigation bar -->
 <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-        <a class="navbar-brand" href="#">Carpool BUAP</a>
+        <a class="navbar-brand" href="../index.php">Carpool BUAP</a>
         <a id="btn-abrir-popup" class="btn btn-primary btn-abrir-popup">Iniciar Sesión</a>
     </div>
 </nav>
