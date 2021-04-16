@@ -1,5 +1,6 @@
 /* This was included in version 0.5 and is for driver data. */
 
+/*
 .conductor {
     visibility: hidden;
 }
@@ -8,6 +9,10 @@
     visibility: visible;
 }
 
+This can be useful at another time
+At the moment, to show and hide the data conductor
+the script is enough ;)
+*/
 .form-control2 {
     border-radius: 25px;
     justify-content: center;
