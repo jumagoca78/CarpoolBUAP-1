@@ -124,9 +124,9 @@ Jueves 15 de Abril de 2021, 7:35 PM - 12:06 PM
 Versión 0.6
 N. Zavala Mario A.
 
-Hoy llevé a cabo el trabajo pendiente en la vsta de registro para la Visiblidad y ocultamiento de los datos con respecto al conductor.
-Validé el correo que esté en un formato correcto al cuando el usuario lo proporcione EN la vista "principal.php".
-Al obtener el correo, este ya se inserta exitosamente en el campo del lado de la vista de registro correctamente.
+Hoy llevé a cabo el trabajo pendiente en la vista de registro para la Visiblidad y ocultamiento de los datos con respecto al conductor.
+Validé el correo que esté en un formato correcto cuando el usuario lo proporcione EN la vista "principal.php".
+Al obtener el correo, este ya se inserta exitosamente en el campo del lado de la vista de registro.
 También trabajé en el modelo relacional de la bbdd.
 
 Código utilizado para estas tareas:
