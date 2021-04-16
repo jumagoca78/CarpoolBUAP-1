@@ -170,6 +170,10 @@ Código utilizado para estas tareas:
 2.- En el archivo "registro.js" se decidió por intervenirlo con código jQuery en vez de JS puro.
 3.- sentencia if php en el archivo "registro.php" en el input 'conductor' en su atributo value para evitar una 
     anomalía en el arreglo asociado POST.     
+    
+Pendientes:
+ 
+1.- No he validado el formato del correo a @alumno.buap.mx 
 
 Fin del reporte de N. Zavala Mario A..
 -------------------------------------------------------------------------------------------------------------------------------------
