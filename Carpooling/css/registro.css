@@ -130,6 +130,20 @@
     border-radius: 25px;
 }
 
+.btn-primary{
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: #5e7de3;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    border-radius: 25px;
+}
+
 .popup form .btn-submit:hover {
     background: rgba(94, 125, 227, 0.9);
 }
