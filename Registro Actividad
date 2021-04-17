@@ -96,7 +96,7 @@ Versión 0.4
 Hugo Alexos Chiquito Onofre
 
 1.- Se creo el archivo registrar-usuario.php
-    -Se creo el formulaio de recopilación de dato con validación.
+    - Se creo el formulaio de recopilación de dato con validación.
 
 No logré terminar mi tarea indicada a tiempo, queda pendiente el formulario de registro de 
 automóvil, así como el script necesario para el manejo de el formulario oculto a través
@@ -114,3 +114,77 @@ Creación y detallado del loogo.
 3. Se termina la primera version formal del logo. 
 ---------------------------------------------------------------------------------------------------------------------------------------
 Probando Github Desktop por Hugo
+-------------------------------------------------------------------------------------------------------------------------------------
+Martes 13 de Abril de 2021, 1:15 pm - 3:00 pm
+Version 0.5
+Hugo Alexis Chiquito Onofre y Jesús Alexis Ramírez Navor
+
+1.- Se creo el archivo registro.css
+    - Creación de los estilos para el formulario de registro
+
+2.- Se creo el archivo registro.js
+    - Intentó de lograr que cuando se clickea la checkbox de conductor se muestre el registro del resto de datos
+
+Aún no se ha terminado el js ni el formulario, se necesita más trabajoy probablemente ayuda.
+Fin del reporte de Hugo Alexis Chiquito Onofre y Jesús Alexis Ramírez Navor
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Jueves 15 de Abril de 2021, 7:35 PM - 12:06 PM
+Versión 0.6
+N. Zavala Mario A.
+
+Hoy llevé a cabo el trabajo pendiente en la vista de registro para la Visiblidad y ocultamiento de los datos con respecto al conductor.
+Validé el correo que esté en un formato correcto cuando el usuario lo proporcione EN la vista "principal.php".
+Al obtener el correo, este ya se inserta exitosamente en el campo del lado de la vista de registro.
+También trabajé en el modelo relacional de la bbdd.
+
+Código utilizado para estas tareas:
+
+1.- Archivo "registro.css" y reutilización del estilo en el archivo "principal.css".
+2.- Archivo "registro.js". En él se obtiene el elemento html a afectar.
+3.- Archivo "validate-email.js" en el cuál se 'dispara' el evente de verificaión de correo.
+4.- sentencia php echo en el archivo "registro.php" en el input 'conductor' en su atributo value. 
+
+Inconsistencias econtradas:
+
+1.- Habrá que prestar atención a porqué los checkbox de pasajero y conductor no se "pintan" al ser seleccionados.
+    Sobre ellos se llevan a cabo los eventos de mostrar y ocultar los datos del conductor. Sospecho que sea eso.
+    
+Aportaciones extra "oficiales":
+
+1.- Cree una nueva carpeta llamada "Reports" en el que coloco una aún más detallada explicación de lo que se hizo 
+    hoy para mis compañeros que puede resultarles útil.
+    * Habrá que conversarlo con Jesús si es que autoriza su permanencia en el repositorio.
+
+Observaciones:
+
+1.- Estoy seguro que no dejé errores en el código, pero estaré muy al pendiente para corregirlas si se sucitan.
+
+Fin del reporte de N. Zavala Mario A..
+-------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Jueves 15 de Abril de 2021, 2:25 PM - 3:06 PM / 7:00 PM - 10:45PM 
+Versión 0.7
+N. Zavala Mario A.
+
+Hoy resolví el problema de seleccionar efectivamente el checkbox de ambos tipos de usuario: pasajero y chofer.
+Recibí ayuda de mi lider de desarrollo, Jesús; hice varias pruebas y tuve una interrupción de 4:34 min!
+En un principio, ideé una forma muy diferente de hacerlo y en el proceso aprendí varias cosas.
+Satisfecho por lo realizado hoy.
+
+Código utilizado para estas tareas:
+
+1.- En el archivo "registro.css" se suprimieron las reglas css de visibilidad en la sección de conductor.
+2.- En el archivo "registro.js" se decidió por intervenirlo con código jQuery en vez de JS puro.
+3.- sentencia if php en el archivo "registro.php" en el input 'conductor' en su atributo value para evitar una 
+    anomalía en el arreglo asociado POST.     
+    
+Pendientes:
+ 
+1.- No he validado el formato del correo a @alumno.buap.mx 
+
+Fin del reporte de N. Zavala Mario A..
+-------------------------------------------------------------------------------------------------------------------------------------
