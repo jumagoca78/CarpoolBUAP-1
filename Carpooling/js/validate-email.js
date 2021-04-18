@@ -16,14 +16,32 @@ function verify() {
   // Validates the value collected
   if(email == "")
   {
-    alert("Proporciona tu correo para que podamos registrarte ;)");
+    /* 
+      pop-up that replaces the alert to indicate email no provided 
+      with the jquery plug-in: sweetalert
+    */
+    swal({
+	         title: "Ingresa tu Correo",
+	         text: "Proporciona tu correo institucional\npara que podamos registrarte ;)",
+	         icon: "warning"	 		
+    });
+    //alert("Proporciona tu correo para que podamos registrarte ;)");
     return false; 
   }
   else
   {
     if(!expresion.test(email))
     {
-      alert("El correo no est� bien escrito\nFavor de verificarlo");
+      /* 
+        pop-up that replaces the wrong email alert provided 
+        with the jquery plug-in: sweetalert
+      */
+      swal({
+             title: "El correo no está bien escrito",
+             text: "Verificalo",
+	           icon: "error"	   	
+      });
+      //alert("El correo no está bien escrito\nFavor de verificarlo");
       return false;
     }    
   }      
