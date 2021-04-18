@@ -7,6 +7,22 @@ header.masthead {
   padding-bottom: 8rem;
 }
 
+/*------ email pop-up sweet alert ------*/
+
+.swal-button {
+
+    background-color: #5e7de3;
+
+}
+
+.swal-text {
+  
+  font-size: 20px;
+
+}
+
+/*---------------------------------------*/
+
 .overlay {
   background: rgba(0, 0, 0, 0.3);
   position: fixed;
