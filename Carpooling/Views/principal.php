@@ -83,7 +83,7 @@ session_start();
                 <div class="form-row">
                     <div class="col-12 col-md-9 mb-2 mb-md-0">
                         <input type="email" class="form-control form-control-lg"
-                               placeholder="Introduce tu correo institucional..." id="reg_correoIns" name="correo_ins" required / >
+                               placeholder="Introduce tu correo institucional..." id="reg_correoIns" name="correo_ins" / >
                     </div>
                     <div class="col-12 col-md-3">
                         <button type="submit" class="btn btn-block btn-lg btn-primary">¡Regístrate!</button>
@@ -112,6 +112,7 @@ session_start();
 
 <script src="js/popup.js"></script>
 <script src="js/validate-email.js"></script>
+<script src="js/sweetalert.js"></script>
     
 </body>
 </html>
