@@ -39,7 +39,7 @@ function verify() {
       swal({
              title: "El correo no está bien escrito",
              text: "Verifícalo",
-	           icon: "error"	   	
+	     icon: "error"	   	
       });
       //alert("El correo no está bien escrito\nFavor de verificarlo");
       return false;
