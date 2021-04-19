@@ -24,3 +24,75 @@ $(function() {
   });
  
 });
+
+
+// To take the user´s photo
+var localstream, canvas, video,  ctx; 
+ 
+  function turnOnCamera() {
+  
+    // defined spacign for the canvas element
+    canvas = document.getElementById("canvas");
+    ctx = canvas.getContext("2d"); 
+    // getting our media channel 
+    video = document.getElementById("video");
+
+    /*
+      Aks if the public instance variable getUserMedia is setted.
+      If don´t, then proceeds to set it up with the following 
+      same variable that provides the navigator
+    */
+     if(!navigator.getUserMedia)
+       navigator.getUserMedia = ( navigator.webkitGetUserMedia ||
+		                            navigator.mozGetUserMedia ||
+			                         navigator.msGetUSerMedia);  
+       
+    // Getting the camera element
+    if(!window.URL)
+       window.URL = window.webkitURL;
+
+      if(navigator.getUserMedia) {
+          
+        /*
+         Configure out the camera only video and the photo
+         taken is inserted into the input video all this through
+         stream
+        */
+        navigator.getUserMedia({"video": true, "audio": false}, 
+          function(stream) { 
+            try {
+                  localstream = stream;
+                  video.srcObject = stream;
+                  video.play();
+                } catch(error) {
+                    video.srcObject = null; 
+                }
+           }); } else {  
+                  swal("Mensaje", "Cámara no disponible", "error");    
+          }   	         
+ 
+      }; // End turnOnCamera
+ 
+      // the camera turns off closing the stream 
+      function turnOffCamera() {
+        video.pause();
+        video.srcObject = null;
+        localstream.getTracks()[0].stop();
+      }
+
+     // Select image
+    $("#radiophoto").click(function() {
+       $(" #uploadphoto").addClass("none");
+       $("#video").removeClass("none");
+       $("#btn-save").removeClass("none");
+       turnOnCamera();
+       document.getElementById("uploadphoto").value = null; 
+    }); 
+
+   $("#radiosphoto").click(function() {
+       $("#uploadphoto").removeClass("none");
+       $("#video").addClass("none");
+       $("#btn-save").addClass("none");
+       turnOffCamera();
+    });
+
