@@ -229,3 +229,28 @@ Pendientes:
 
 Fin del reporte de Jesús Alexis Ramírez Navor
 -------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Jueves 18 de Abril de 2021, 9:34 PM - 9:51PM 
+Versión 0.7
+N. Zavala Mario A.
+
+Trabajé junto a mi compañero Hugo, la vista de registro en el apartado que permita al usuario capturar una foto suya como parte de 
+su decisión de darse de alta en la aplicación.
+
+Código utilizado para estas tareas:
+
+1.- En el archivo "registro.css" se escribieron nuevas reglas para la visibilidad en la sección foto de usuario.
+2.- En el archivo "registro.js" se agregó las funciones 'turnOnCamera' y 'turnOffCamera'.
+3.- Se agregó el plug-in: sweetalert.
+    *Nota: esto como parte de mi aún falta de habilidad para crear ventanas emergentes propias.
+    
+Pendientes:
+ 
+1.- No he validado el formato del correo a @alumno.buap.mx 
+2.- El botón "Captura!" que debe realizar la foto desde la cámara del móvil o pc del usuario, aún no es funcional.
+3.- Al seleccionar "selecciona foto", debe cerrar con éxito la cámara apagándola. Esto aún falla.
+4.- Distribuir de mejor forma esta sección en el formulario.
+
+Fin del reporte de N. Zavala Mario A..
+-------------------------------------------------------------------------------------------------------------------------------------
