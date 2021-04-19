@@ -98,3 +98,12 @@ var localstream, canvas, video,  ctx;
        turnOffCamera();
     });
 
+function captura() {
+
+  video.pause();
+  ctx.drawImage(video, 0, 0,  canvas.width, canvas.height);
+  let photo = canvas.toDataURL();
+  video.play();
+
+}
+
