@@ -58,19 +58,21 @@ var localstream, canvas, video,  ctx;
          taken is inserted into the input video all this through
          stream
         */
-        navigator.getUserMedia({"video": true, "audio": false}, 
-          function(stream) { 
-            try {
-                  localstream = stream;
-                  video.srcObject = stream;
-                  video.play();
-                } catch(error) {
-                    video.srcObject = null; 
-                }, function(){
-			swal("Cámara bloqueda", "da click en permitir para usar la cámara", "warning");
-		}); } else {  
-                  swal("Mensaje", "Cámara no disponible", "error");    
-          }   	         
+        navigator.getUserMedia({audio: false, video: true}, 
+        function(stream) {
+          try {
+              localstream = stream;
+              video.srcObject = stream;
+	      video.play();    
+          } catch(error) {
+              video.srcObject = null;
+          }
+          }, function() {
+           swal("Cámara bloqueda", "da click en permitir para usar la cámara", "warning");
+        }); 
+        } else {
+           swal("Mensaje", "getUserMedia no disponible", "error");
+        }
  
       }; // End turnOnCamera
  
