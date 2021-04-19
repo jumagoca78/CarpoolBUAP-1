@@ -48,7 +48,7 @@
           </fieldset>
 
           <div class="">
-            <input type="file" class="form-control-file" name="archivo" id="uploadphoto" accpet="image/*">
+            <input type="file" class="form-control-file" name="archivo" id="uploadphoto" accept="image/*">
               <video id="video" autoplay="autoplay"  class="video_container none"></video>     
              </div>		
 	      </div>
