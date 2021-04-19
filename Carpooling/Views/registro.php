@@ -133,6 +133,8 @@
 
 <script src="../js/popup.js"></script>
 <script src="../js/registro.js"></script>
+<script src="../js/sweetalert.js"></script>
+
 
 </body>
 </html>
