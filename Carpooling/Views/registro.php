@@ -41,7 +41,7 @@
 		        <label class="form-check-label" for="radiosphoto">Seleccionar Foto</label>
 		      </div>
 		      <div class="form-check col-6 col-md-4">
-		        <input type="radio" name="radio_select" class="form-check-input" id="radiophoto"  onclick="turnOnCamera()" />	
+		        <input type="radio" name="radio_select" class="form-check-input" id="radiophoto" />	
 		        <label class="form-check-label" for="radiophoto">Tomar Foto</label>
 		      </div>
 		    </div>
