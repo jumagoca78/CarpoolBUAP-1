@@ -232,7 +232,7 @@ Fin del reporte de Jesús Alexis Ramírez Navor
 
 -------------------------------------------------------------------------------------------------------------------------------------
 Jueves 18 de Abril de 2021, 9:34 PM - 9:51PM 
-Versión 0.7
+Versión 0.10
 N. Zavala Mario A.
 
 Trabajé junto a mi compañero Hugo, la vista de registro en el apartado que permita al usuario capturar una foto suya como parte de 
@@ -249,7 +249,6 @@ Pendientes:
  
 1.- No he validado el formato del correo a @alumno.buap.mx 
 2.- El botón "Captura!" que debe realizar la foto desde la cámara del móvil o pc del usuario, aún no es funcional.
-3.- Al seleccionar "selecciona foto", debe cerrar con éxito la cámara apagándola. Esto aún falla.
 4.- Distribuir de mejor forma esta sección en el formulario.
 
 Fin del reporte de N. Zavala Mario A..
