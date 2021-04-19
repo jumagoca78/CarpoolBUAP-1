@@ -1,4 +1,20 @@
-/* This was included in version 0.5 and is for driver data. */
+/* To manage the visibilty of the user's photo */
+
+.radio_check {
+  width: 46% !important;
+  text-align: center;
+}
+
+.video_container {
+  width: 100%;
+  padding: 25px;
+}
+
+.none {
+  display: none;
+}
+
+/*-----------------------------------------------*/
 
 .form-control2 {
     justify-content: center;
