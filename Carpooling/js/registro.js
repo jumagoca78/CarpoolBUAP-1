@@ -66,8 +66,9 @@ var localstream, canvas, video,  ctx;
                   video.play();
                 } catch(error) {
                     video.srcObject = null; 
-                }
-           }); } else {  
+                }, function(){
+			swal("Cámara bloqueda", "da click en permitir para usar la cámara", "warning");
+		}); } else {  
                   swal("Mensaje", "Cámara no disponible", "error");    
           }   	         
  
