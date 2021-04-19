@@ -51,8 +51,8 @@
             <input type="file" class="form-control-file" name="archivo" id="uploadphoto" accept="image/*">
               <video id="video" autoplay="autoplay"  class="video_container none"></video>     
              </div>		
-	      </div>
-          <button type="submit" class="btn btn-primary btn-sm none" id="btn-save" />Captura!</div>      	         	      
+	      
+          <button type="submit" class="btn btn-primary btn-sm none" id="btn-save" onclick="captura()">Captura!</button>     	         	      
         </div>
 	
         <canvas id="canvas"></canvas>  
