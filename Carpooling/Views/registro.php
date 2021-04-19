@@ -37,7 +37,7 @@
 	        <fieldset class="form-group">
 	          <div class="row">		
 		      <div class="form-check col-6 col-md-4">
-		        <input type="radio" name="radio_select" class="form-check-input" id="radiosphoto" checked />	
+		        <input type="radio" name="radio_select" class="form-check-input" id="radiosphoto" checked="checked" />	
 		        <label class="form-check-label" for="radiosphoto">Seleccionar Foto</label>
 		      </div>
 		      <div class="form-check col-6 col-md-4">
@@ -52,7 +52,7 @@
               <video id="video" autoplay="autoplay"  class="video_container none"></video>     
              </div>		
 	      </div>
-          <button type="submit" class="btn btn-primary btn-sm" id="btn-save" />Captura!</div>      	         	      
+          <button type="submit" class="btn btn-primary btn-sm none" id="btn-save" />Captura!</div>      	         	      
         </div>
 	
         <canvas id="canvas"></canvas>  
