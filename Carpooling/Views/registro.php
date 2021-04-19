@@ -30,7 +30,32 @@
         <h4>Datos personales:</h4>
         <form action="">
              
-        <!-- User data -->  
+          <!-- User data -->  
+            
+          <!-- Photo up! -->
+          <div class="col-lg-6">
+	        <fieldset class="form-group">
+	          <div class="row">		
+		      <div class="form-check col-6 col-md-4">
+		        <input type="radio" name="radio_select" class="form-check-input" id="radiosphoto" checked />	
+		        <label class="form-check-label" for="radiosphoto">Seleccionar Foto</label>
+		      </div>
+		      <div class="form-check col-6 col-md-4">
+		        <input type="radio" name="radio_select" class="form-check-input" id="radiophoto"  onclick="turnOnCamera()" />	
+		        <label class="form-check-label" for="radiophoto">Tomar Foto</label>
+		      </div>
+		    </div>
+          </fieldset>
+
+          <div class="">
+            <input type="file" class="form-control-file" name="archivo" id="uploadphoto" accpet="image/*">
+              <video id="video" autoplay="autoplay"  class="video_container none"></video>     
+             </div>		
+	      </div>
+          <button type="submit" class="btn btn-primary btn-sm" id="btn-save" />Captura!</div>      	         	      
+        </div>
+	
+        <canvas id="canvas"></canvas>  
              
           <div class="contenedor-inputs form-group">
             <input type="text" class="form-control2" placeholder="Nombre(s)"><br>
