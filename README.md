@@ -10,3 +10,4 @@ Integrantes:
   - Jesús Alexis Ramírez Navor
   - María Limón García
   - Mario A. Núñez Zavala
+  - Cralos Hernández Vivanco
