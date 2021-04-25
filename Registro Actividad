@@ -10,11 +10,11 @@ Si hubiese trabajado con el código haría lo siguiente:
 1.- Archivo index.html
     - Realice cambios en el formato del código desde la línea X hasta la línea Y.
     - Elimine un div que no contenía nada.
-    
+
 Fin del reporte de Jesús Alexis Ramírez Navor.
 -------------------------------------------------------------------------------------------------------------------------------------
 Recuerden usar esta plantilla de este modo para evitar confusiones y mejorar nuestra organización.
-  
+
 -------------------------------------------------------------------------------------------------------------------------------------
 Jueves 8 de Abril de 2021, 7:00 PM - 7:37 PM
 Versión 0.1
@@ -26,15 +26,15 @@ También agregé una "muesca" sobre como ha de entenderse los primeros indicios 
 Mi trabajo en código se remitió a lo siguiente:
 
 1.- Creación de carpetas para los controladores, modelos y Vistas.
-    - Cree los archivos que permiten una comunicación integra (aunque aún limitida, eso sí) entre lo que solicita el usuario y lo que 
+    - Cree los archivos que permiten una comunicación integra (aunque aún limitida, eso sí) entre lo que solicita el usuario y lo que
       obtiene.
-      *La vista que se visualiza al entrar a la página, es tríada por el controlador-plantilla sin invocar al modelo. Esto no es parte 
+      *La vista que se visualiza al entrar a la página, es tríada por el controlador-plantilla sin invocar al modelo. Esto no es parte
       de la interacción del usuario (recién entro).
-    - Agregué algunos archivos menores que serán editados o incluso eliminados para dar pie a lo que se proponga en la gestión en 
+    - Agregué algunos archivos menores que serán editados o incluso eliminados para dar pie a lo que se proponga en la gestión en
       equipo.
-2.- Incluí el uso del framework bootstrap que sirve como mero concepto visual. Posiblemente será reemplazado o quizás, trabajado de 
+2.- Incluí el uso del framework bootstrap que sirve como mero concepto visual. Posiblemente será reemplazado o quizás, trabajado de
     una manera distinta por mis compañeros.
-    
+
 Fin del reporte de N. Zavala Mario A.
 -------------------------------------------------------------------------------------------------------------------------------------
 
@@ -52,7 +52,7 @@ Creación de la página principal que nos llevará a las vistas del login y el r
     - Contiene información general de la aplicación
     - Un botón para iniciar sesión que nos llevaria al formulario
     - Un pequeño apartado para pedir el correo y registrarse
-    
+
 Fin del reporte de Jesús Alexis Ramírez Navor.
 -------------------------------------------------------------------------------------------------------------------------------------
 
@@ -85,8 +85,8 @@ Hugo Alexis Chiquito Onofre
 
 Creación de la ventana registro.
 
-En esta versión no realice cambios significativos, pues mi nula experiencia en el manejo de 
-bootstrap me complico el trabajo, en este tiempo realice ligeros cambios y pruebas para la 
+En esta versión no realice cambios significativos, pues mi nula experiencia en el manejo de
+bootstrap me complico el trabajo, en este tiempo realice ligeros cambios y pruebas para la
 futura interfaz a realizar.
 
 Fin del reporte de Hugo Alexis Chiquito Onofre
@@ -98,7 +98,7 @@ Hugo Alexos Chiquito Onofre
 1.- Se creo el archivo registrar-usuario.php
     - Se creo el formulaio de recopilación de dato con validación.
 
-No logré terminar mi tarea indicada a tiempo, queda pendiente el formulario de registro de 
+No logré terminar mi tarea indicada a tiempo, queda pendiente el formulario de registro de
 automóvil, así como el script necesario para el manejo de el formulario oculto a través
 de los checkbox.
 Fin del reporte de Hugo Alexis Chiquito Onofre
@@ -119,22 +119,22 @@ Fin del reporte de Hugo Alexis Chiquito Onofre y Jesús Alexis Ramírez Navor
 
 -------------------------------------------------------------------------------------------------------------------------------------
 Miercoles 14 de abril de 2021, 11:59 PM
-Versión 
-Maria del Carmen Limon Garcia 
-
-Creación y detallado del loogo. 
-
-1. Dias antes se creo el primer borrador del logo a utilizar. 
-2. Dias posteriores se ajustaron detalles y colores a utilizar. 
-3. Se termina la primera version formal del logo. 
----------------------------------------------------------------------------------------------------------------------------------------
-Jueves 15 de Abril de 2021, 10:35 AM 
+Versión
 Maria del Carmen Limon Garcia
 
-1. Se inicia la creacion de los archivos inicio y stylee. 
+Creación y detallado del loogo.
+
+1. Dias antes se creo el primer borrador del logo a utilizar.
+2. Dias posteriores se ajustaron detalles y colores a utilizar.
+3. Se termina la primera version formal del logo.
+---------------------------------------------------------------------------------------------------------------------------------------
+Jueves 15 de Abril de 2021, 10:35 AM
+Maria del Carmen Limon Garcia
+
+1. Se inicia la creacion de los archivos inicio y stylee.
 2. Se comienza con lo basico de una pagina HTML.
 
-1:15 PM 
+1:15 PM
 1. Se inicia la construccion del header
 2. Se prueba diferentes colores de los ya propuestos en la gama de colores.
 
@@ -143,7 +143,7 @@ Maria del Carmen Limon Garcia
 2. Las paginas antes mencionadas son en realidad formularios para cada tipo de usuario.
 
 7:25 PM
-1. Se continua trabajando en la creacion de la pagina. 
+1. Se continua trabajando en la creacion de la pagina.
 2. Se corrigen errores en la hoja de estilos.
 -------------------------------------------------------------------------------------------------------------------------------------
 Jueves 15 de Abril de 2021, 7:35 PM - 12:06 PM
@@ -160,16 +160,16 @@ Código utilizado para estas tareas:
 1.- Archivo "registro.css" y reutilización del estilo en el archivo "principal.css".
 2.- Archivo "registro.js". En él se obtiene el elemento html a afectar.
 3.- Archivo "validate-email.js" en el cuál se 'dispara' el evente de verificaión de correo.
-4.- sentencia php echo en el archivo "registro.php" en el input 'conductor' en su atributo value. 
+4.- sentencia php echo en el archivo "registro.php" en el input 'conductor' en su atributo value.
 
 Inconsistencias econtradas:
 
 1.- Habrá que prestar atención a porqué los checkbox de pasajero y conductor no se "pintan" al ser seleccionados.
     Sobre ellos se llevan a cabo los eventos de mostrar y ocultar los datos del conductor. Sospecho que sea eso.
-    
+
 Aportaciones extra "oficiales":
 
-1.- Cree una nueva carpeta llamada "Reports" en el que coloco una aún más detallada explicación de lo que se hizo 
+1.- Cree una nueva carpeta llamada "Reports" en el que coloco una aún más detallada explicación de lo que se hizo
     hoy para mis compañeros que puede resultarles útil.
     * Habrá que conversarlo con Jesús si es que autoriza su permanencia en el repositorio.
 
@@ -181,7 +181,7 @@ Fin del reporte de N. Zavala Mario A..
 -------------------------------------------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------------------------------------------
-Jueves 15 de Abril de 2021, 2:25 PM - 3:06 PM / 7:00 PM - 10:45PM 
+Jueves 15 de Abril de 2021, 2:25 PM - 3:06 PM / 7:00 PM - 10:45PM
 Versión 0.7
 N. Zavala Mario A.
 
@@ -194,12 +194,12 @@ Código utilizado para estas tareas:
 
 1.- En el archivo "registro.css" se suprimieron las reglas css de visibilidad en la sección de conductor.
 2.- En el archivo "registro.js" se decidió por intervenirlo con código jQuery en vez de JS puro.
-3.- sentencia if php en el archivo "registro.php" en el input 'conductor' en su atributo value para evitar una 
-    anomalía en el arreglo asociado POST.     
-    
+3.- sentencia if php en el archivo "registro.php" en el input 'conductor' en su atributo value para evitar una
+    anomalía en el arreglo asociado POST.
+
 Pendientes:
- 
-1.- No he validado el formato del correo a @alumno.buap.mx 
+
+1.- No he validado el formato del correo a @alumno.buap.mx
 
 Fin del reporte de N. Zavala Mario A..
 -------------------------------------------------------------------------------------------------------------------------------------
@@ -248,11 +248,11 @@ Fin del reporte de Jesús Alexis Ramírez Navor
 -------------------------------------------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------------------------------------------
-Jueves 18 de Abril de 2021, 9:34 PM - 9:51PM 
+Jueves 18 de Abril de 2021, 9:34 PM - 9:51PM
 Versión 0.10
 N. Zavala Mario A.
 
-Trabajé junto a mi compañero Hugo, la vista de registro en el apartado que permita al usuario capturar una foto suya como parte de 
+Trabajé junto a mi compañero Hugo, la vista de registro en el apartado que permita al usuario capturar una foto suya como parte de
 su decisión de darse de alta en la aplicación.
 
 Código utilizado para estas tareas:
@@ -261,15 +261,38 @@ Código utilizado para estas tareas:
 2.- En el archivo "registro.js" se agregó las funciones 'turnOnCamera' y 'turnOffCamera'.
 3.- Se agregó el plug-in: sweetalert.
     *Nota: esto como parte de mi aún falta de habilidad para crear ventanas emergentes propias.
-    
+
 Pendientes:
- 
-1.- No he validado el formato del correo a @alumno.buap.mx 
+
+1.- No he validado el formato del correo a @alumno.buap.mx
 2.- El botón "Captura!" que debe realizar la foto desde la cámara del móvil o pc del usuario, aún no es funcional.
 4.- Distribuir de mejor forma esta sección en el formulario.
 
 Fin del reporte de N. Zavala Mario A..
 -------------------------------------------------------------------------------------------------------------------------------------
+Martes 20 de Abril de 2021, 2:00 PM
+Maria del Carmen Limon Garcia
+
+Inicio la creacion de la interfaz del perfil de usuario
+----------------------------------------------------------------------------------------------------------
+
+Jueves 22 de Abril de 2021, 2:36 PM
+Maria del Carmen Limon
+
+Continuo con el diseño de la pagina del perfil de usuario, esta vez resolviendo errores en la hoja de estilos
+
+Jueves 22 de Abril de 2021, 8:40
+Maria del Carmen Limon
+
+Trabajo en los formatos y tamaño del logo creado
+-----------------------------------------------------------------------------------------------------------
+
+Viernes 23 de Abril de 2021, 3:00 PM - 4:30 PM
+Maria del Carmen Limon Garcia
+
+Trabajo en detalles del perfil de usuario, sigo sin saber como resolver el boton de editar perfil puesto que
+tampoco lo han prototipado en las diapositivas del proyecto, tambien sigo sin resolver el detalle del ranking.
+
 -------------------------------------------------------------------------------------------------------------------------------------
 
 Domingo 25 de Abril de 2021, 12:20 AM - 1:49 PM
@@ -280,4 +303,3 @@ Por el momento cree la ventana para elegir el tipo de usuario a ingresar.
 Estuve probando diferentes diseños, falta realizar el backend.
 
 -------------------------------------------------------------------------------------------------------------------------------------
-
