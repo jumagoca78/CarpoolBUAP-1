@@ -23,15 +23,21 @@
 </nav>
 
 <div class="container-lg text-align-center">
+<h4 class="mt-3 text-center">Selecciona tu tipo de usuario</h4>
   <div class="row">
-    <div class="mx-auto mt-5 m-3 p-5">
-      <button class="btn btn-primary btn-lg btn-block mb-5" type="button">Conductor</button>
-      <button class="btn btn-primary btn-lg btn-block" type="button">Pasajero</button>
+    <div class="mx-auto m-5 text-center">
+      <div class="col">
+            <button class="btn btn-primary btn-lg btn-block " type="button" onclick='#'>Pasajero</button>
+            <p class="fs-6 fw-lighter">¡Comparte tu viaje!</p>
+        </div>
+
+        <div class="col mt-5">
+            <button class="btn btn-primary btn-lg btn-block" type="button" onclick='#'>Conductor</button>
+            <p>¡Busca un conductor!</p>
+        </div>
     </div>
   </div>    
 </div>
-
-
 
 </body>
 </html>
