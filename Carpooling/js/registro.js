@@ -22,6 +22,28 @@ $(function() {
         $('#conductorDiv').hide();  // If it is unfocussed, it is hidden  
  
   });
+	
+  // Verifies 
+  // limit of nine numbers
+  $('#matricula').on('keydown keypress',function(e){
+        if(e.key.length === 1){
+            if($(this).val().length < 9 && !isNaN(parseFloat(e.key))) {
+                $(this).val($(this).val() + e.key);
+            }
+            return false;
+        }
+  });
+  // Only text
+  $(".text").keypress(function (key) {
+        if ((key.charCode < 97 || key.charCode > 122)
+            && (key.charCode < 65 || key.charCode > 90)
+            && (key.charCode != 45)
+            && (key.charCode != 241)
+            && (key.charCode != 209)
+            && (key.charCode != 32)
+        )
+        return false;
+    });	
  
 });
 
