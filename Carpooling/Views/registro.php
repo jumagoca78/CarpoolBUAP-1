@@ -24,7 +24,7 @@
 <!-- Navigation bar -->
 
 <main class="bg-light text-center">
-  <form class="p-3">
+  <form class="p-3" id="reg_frm">
   <h3>Regístrarse</h3>
   <!-- TOMAR FOTO --> <!-- SELECCIONAR FOTO  NECESITA ARREGLOS-->
     <div class="container-sm form-group">
@@ -46,10 +46,10 @@
   
     <!-- FORMULARIO -->
     <div class="mb-3 mt-2">
-      <input type="text" class="form-control" placeholder="Nombre(s)">
+      <input type="text" class="form-control text" placeholder="Nombre(s)">
     </div>
     <div class="mb-3">
-      <input type="text" class="form-control" placeholder="Apellidos">
+      <input type="text" class="form-control text" placeholder="Apellidos">
     </div>
     <div class="mb-3">
       <input type="number" class="form-control" placeholder="Edad" min="18" max="110">
@@ -61,7 +61,7 @@
       </select>
     </div>
     <div class="mb-3">
-      <input type="number" class="form-control" placeholder="Matricula" min="000000002" max="300000000">
+      <input type="number" class="form-control " placeholder="Matricula" min="000000002" max="300000000" id="matricula" />
     </div>
     <div class="mb-3">
      <input type="email" class="form-control" placeholder="Correo (correo@alumno.buap.mx)" value="<?php if( isset($_POST['correo_ins']) ) echo $_POST['correo_ins']; ?>" />
