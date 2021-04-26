@@ -16,13 +16,9 @@
 <body>
 
 <!-- Navigation bar -->
-<nav class="navbar navbar-dark bg-primary">
-    <div class="container">
-        <a class="navbar-brand" href="../index.php">Carpool BUAP</a>
-    </div>
-</nav>
 
-<div class="container-lg text-align-center">
+
+<div class="container-lg text-align-center mt-5 pt-5">
 <h4 class="mt-3 text-center">Selecciona tu tipo de usuario</h4>
   <div class="row">
     <div class="mx-auto m-5 text-center">
