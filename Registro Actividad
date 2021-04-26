@@ -57,6 +57,32 @@ Fin del reporte de Jesús Alexis Ramírez Navor.
 -------------------------------------------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------------------------------------------
+Sabado 10 de Abril de 2021, 11:05 PM - Domingo 11 de Abril de 20217 01:38 AM
+Versión 0.3
+Emmanuel Revuelta Rodriguez.
+
+Creación de la páginas secundarias que nos llevarán a la vista de login y el registro.
+
+1.- Creación de carpeta "Formularios" que contiene:
+-Carpeta "static" que almacena los elementos css y las imagenes.
+-Archivo "login.html"
+-Archivo "registrar.html"
+
+2.- login.html
+
+-Realice un formulario para iniciar sección en la plataforma con los campos: "Nombre de Usuario" y "Contraseña".
+- Un botón para iniciar sesión con la información introducida.
+- Un botón para "Recordar contraseña"
+
+3.- registrar.html
+
+- Un botón para Mandar la información .
+
+NOTA: Este código no se utilizó.
+Fin del reporte de Emmanuel Revuelta Rodriguez.
+-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+
 Domingo 11 de Abril de 2021, 1:30 PM - 2:10 PM
 Versión 0.3
 Jesús Alexis Ramírez Navor
@@ -205,6 +231,18 @@ Fin del reporte de N. Zavala Mario A..
 -------------------------------------------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------------------------------------------
+viernes 16 de Abril de 2021, 3:30 AM - 03:57 AM
+Versión 
+Emmanuel Revuelta Rodriguez.
+
+Qusque la manera de mostrar un mapa y visualizar la ubicación que se desea para colocar en la página principal, 
+de momento la coloque en la página de que realice que ya no se utilizó para posteriormente colocarla en la página principal
+   
+NOTA: Este codigo no se utilizo.
+Fin del reporte de Emmanuel Revuelta Rodriguez.
+-------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------
 Sábado 17 de Abril de 2021, 0:00 PM - 0:00 PM / 0:00 PM - 0:0 PM
 Versión 0.8
 María
@@ -300,3 +338,13 @@ Carlos Hernandez Vivanco
 
 trabajé en la barra de Navegación, despues de una pequeña confusion de mi parte, subí la barra, supongo que 
 más adelante la NavBar se enlazará con el perfil, al Home y el cambio de tipo de usuario
+------------------------------------------------------------------------------------------------------------
+
+Domingo 25 de abril de 2021, 7:50 PM - 8:40 PM
+Emmanuel Revuelta Rodriguez
+
+Añadí registroauto.php que es la página en donde el usuario puede ingresar la 
+información del vehículo del usuario conductor, este código fue tomado y reutilizado del código de registro 
+para no tener pierde al realizar el guardado de la información en la BD.
+
+-------------------------------------------------------------------------------------------------------------
