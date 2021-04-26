@@ -23,7 +23,6 @@
 </nav>
 
 
-            <!-- This data is only displayed when the user selects driver as their option -->
 
            
                 <h4>Datos automóvil</h4>

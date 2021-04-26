@@ -54,12 +54,20 @@
                     <h5>Telefono: </h5>
                     <p>2229172063</p>
                 </div>
-                <button type="button" class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">
+                <button type="button" class="btn btn-primary mt-3 btn-rounded">
                     Editar
                 </button>
+                <br><br>
             </div>
         </div>
 </section>
+
+<!-- Navigation bar -->
+<nav class="navbar fixed-bottom navbar-light bg-light">
+    <a class="fas fa-home fa-2x" href="inicio.php"></a>
+    <a class="fas fa-user-alt fa-2x" href="profile.php"></a>
+    <a class="fas fa-exchange-alt fa-2x" href="seleccionarusuario.php"></a>
+</nav>
 
 </body>
 </html>

@@ -384,7 +384,7 @@ para no tener pierde al realizar el guardado de la información en la BD.
 -------------------------------------------------------------------------------------------------------------------------------------
 
 Domingo 25 de Abril de 2021, 5:07 PM - 6:00 pm   9:05PM - 10:35PM
-
+Hugo Alexis Chiquito Onofre
 Ajustes en hoja de estilos
 Se hicieron mejoras a las vistas de registro, haciendolas mas
 llamativas para movil.
@@ -393,4 +393,17 @@ Se quedaron pendientes correcciones respecto a la fotografía.
 NOTA: Se perdieron reportes posteriores cuando se junto el proyecto.
 En resumen estuve trabajando con la ventana para elegir el tipo de usuario
 correciones en la hoja de estilos y trabajando en arreglar la captura de foto
+-------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
+Domingo 25 de Abril de 2021, 12:00 AM - 12:55 PM
+Versión 0.12
+Jesús Alexis Ramírez Navor
+
+Creación de la barra de navegación.
+Debido a lo que parece una confusión la barra de navegación no se creo correctamente por Carlos.
+
+La navbar se agregó a todas las vistas que hacen uso de ella una vez que se inicia sesión.
+Se linkeo todos los botones de la barra de navegación a sus interfaces.
+
+Fin del reporte de Jesús Alexis Ramírez Navor
 -------------------------------------------------------------------------------------------------------------------------------------

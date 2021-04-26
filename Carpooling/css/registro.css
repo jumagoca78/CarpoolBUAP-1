@@ -16,6 +16,10 @@
 
 /*-----------------------------------------------*/
 
+.check-btn{
+    padding-right: 30px;
+}
+
 .form-control2 {
     justify-content: center;
     position: center;

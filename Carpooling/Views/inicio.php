@@ -16,25 +16,11 @@
 
 <body>
 
-<!-- Navigation bar -->
-<nav class="navbar navbar-light bg-light static-top">
-    <div class="container">
-        <a class="navbar-brand" >Carpool BUAP</a>
-        <a class="btn btn-primary" href="#">Mi cuenta</a>
-    </div>
-</nav>
-
-<section class="bg-light text-center">
-    <div class="container">
-        <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <br>
-            <a class="btn btn-lg btn-primary" href="viajepasajero.php">Pasajero</a>
-            <a class="btn btn-lg btn-primary" href="viajeconductor.php">Conductor</a>
-        </div>
-    </div>
-    <br>
-</section>
-
+<main class="bg-light text-center">
+    <h2>Bienvenido a Carpool BUAP</h2>
+    <h3>¿Listo para compartir tu primer viaje?</h3>
+</main>
+<br>
 <section class="bg-light text-center">
     <div class="container">
         <div class="mx-auto">
@@ -44,6 +30,14 @@
     </div>
     <br>
 </section>
+
+
+<!-- Navigation bar -->
+<nav class="navbar fixed-bottom navbar-light bg-light">
+    <a class="fas fa-home fa-2x" href="inicio.php"></a>
+    <a class="fas fa-user-alt fa-2x" href="profile.php"></a>
+    <a class="fas fa-exchange-alt fa-2x" href="seleccionarusuario.php"></a>
+</nav>
 
 <script>
     window.onload = function () {

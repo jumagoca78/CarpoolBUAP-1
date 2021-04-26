@@ -23,11 +23,11 @@
 </header>
 <!-- Navigation bar -->
 
-<main class="bg-light">
+<main class="bg-light text-center">
   <form class="p-3">
   <h3>Regístrarse</h3>
   <!-- TOMAR FOTO --> <!-- SELECCIONAR FOTO  NECESITA ARREGLOS-->
-    <div class="container-sm ">
+    <div class="container-sm form-group">
       <input type="file" class="form-control-file" name="archivo" id="uploadphoto" accept="image/*">
       <video id="video" autoplay="autoplay"  class="video_container none"></video>
       <button type="submit" class="btn btn-primary btn-lg" id="btn-save" onclick="captura()">Captura</button> 
@@ -69,10 +69,10 @@
     <div class="mb-3">
       <label>Tipo de usuario: </label>
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="conductorCheck"> 
-        <label class="" for="flexCheckConductor">Conductor</label> </br>
-        <input class="form-check-input check-btn" type="checkbox" value="" id="pasajero">
-        <label class="" for="flexCheckPasajero">Pasajero</label>
+        <input class="form-check-input" type="checkbox" id="conductorCheck">
+        <label class="check-btn" for="flexCheckConductor">Conductor</label>
+        <input class="form-check-input" type="checkbox" value="" id="pasajero">
+        <label class="check-btn" for="flexCheckPasajero">Pasajero</label>
       </div>
     </div>
 
@@ -117,7 +117,7 @@
          </div>
       </div>
       <div class="contenedor-inputs form-group">
-          <input type="submit" class="btn btn-primary float-right" value="Registrarme"><br>
+          <input type="submit" class="btn btn-primary" value="Registrarme"><br>
       </div>
     </form>
 </main>
