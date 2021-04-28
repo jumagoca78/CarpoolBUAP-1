@@ -6,6 +6,21 @@
 */
 $('#conductorDiv').hide();    
 
+
+/*
+  Changes how it looks the registration button
+  in every  process  
+*/
+function btnSaveLoad() {
+    $("#btn_reg").html('Registrando ...');
+    $("#btn_reg").attr("disabled", true);
+}
+
+function btnSave() {
+    $("#btn_reg").html('Registrarme');
+    $("#btn_reg").attr("disabled", false);
+}
+
 /*
   All internal functions are waiting for the document to load first.
   This prevents any of them from activating earlier 
@@ -22,7 +37,7 @@ $(function() {
         $('#conductorDiv').hide();  // If it is unfocussed, it is hidden  
  
   });
-	
+  
   // Verifies 
   // limit of nine numbers
   $('#matricula').on('keydown keypress',function(e){
@@ -43,7 +58,80 @@ $(function() {
             && (key.charCode != 32)
         )
         return false;
-    });	
+    }); 	 
+  //To Keep the user's photo/image
+  $("#reg_frm").unbind('submit').bind('submit', function(){
+
+        var radio = $("input[name='radio_select']:checked").val();
+        var nombre = $('#nombre').val();
+        var apellidop = $('#apellidop').val();
+        var apellidom = $('#apellidom').val();
+        var edad = $('#edad').val();
+	var sexo = $('#sexo').val();
+        var matricula = $('#matricula').val();
+        var email = $('#email').val();
+        if($("#conductorCheck").val() == "on") $tipo = "C";
+	if($("#pasajero").val() == "on") $tipo == "P";
+        if($("#conductorCheck").val() == "on" && $("#pasajero").val() == "on") $tipo = "A";		
+		
+        // This option is not ready yet!!!! BECAREFUL
+        if (radio == 0) {
+
+            cxt.drawImage(video, 0, 0, 300, 150);
+            var data = canvas.toDataURL("image/jpeg");
+            var info = data.split(",", 2);
+           
+            $.ajax({
+                type : "POST",
+                url : "registro.php",
+                data : {foto : info[1], nombre: nombre, apellidop: apellidop, apellidom: apellidom, edad: edad, sexo: sexo, matricula: matricula, email: email, tipo: tipo},
+                dataType : 'json',
+                beforeSend: function() {
+                    btnSaveLoad();
+                },
+                success : function(response) {
+                    btnSave();
+                    if (response.success == true) {
+                        swal("MENSAJE", response.messages , "success");
+                        $("#reg_frm")[0].reset();
+                        $("#radiosfoto").click();
+                    } else {
+                        swal("MENSAJE", "error" , "error");
+                    }
+                }
+            });
+        } else if (radio == 1) {
+
+		$.ajax({
+                url: '../Models/process_img.php',
+                type: 'POST',
+                data: new FormData(this),
+ 				cache: false,
+                contentType: false,
+                processData: false,
+                beforeSend: function(){
+                    btnSaveLoad();
+                },
+                success: function(response){
+                    btnSave();
+                    if (response.success == true) {
+                        swal("MENSAJE", response.messages, "success");
+                        $("#reg_frm")[0].reset();
+                        $("#radiosfoto").click();
+                    } else {
+                        swal("MENSAJE", response.messages, "error");
+                    }
+                }
+				
+	           
+            });
+			
+        }
+		  
+      
+	  return false;	    
+    });
+  
  
 });
 
@@ -99,9 +187,13 @@ var localstream, canvas, video,  ctx;
  
       // the camera turns off closing the stream 
       function turnOffCamera() {
-        video.pause();
-        video.srcObject = null;
-        localstream.getTracks()[0].stop();
+	    if(video != null)
+        {		
+          video.pause();
+          video.srcObject = null;
+		  if(localstream != null)
+            localstream.getTracks()[0].stop();
+	    } 	   
       }
 
      // Select image
