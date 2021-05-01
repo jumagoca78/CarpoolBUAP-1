@@ -9,11 +9,7 @@ header.masthead {
 
 /*------ email pop-up sweet alert ------*/
 
-.swal-button {
 
-    background-color: #5e7de3;
-
-}
 
 .swal-text {
   
@@ -122,7 +118,7 @@ header.masthead {
 }
 
 .popup form .btn-submit:hover {
-  background: rgba(94, 125, 227, 0.9);
+  background: #007bff;
 }
 
 .popup.active {

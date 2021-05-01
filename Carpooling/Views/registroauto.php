@@ -22,28 +22,28 @@
     </div>
 </nav>
 
+<section class="bg-light text-center">
+    <div>
+        <form>
+            <h4>Datos automóvil</h4>
+            <input type="text" class="form-control2" placeholder="Modelo"><br>
+            <input type="text" class="form-control2" placeholder="Marca"><br>
+            <input type="text" class="form-control2" placeholder="Color"><br>
+            <input type="number" class="form-control2" placeholder="Capacidad"><br>
+            <input type="text" class="form-control2" placeholder="Antigüedad"><br>
+            <input type="text" class="form-control2" placeholder="Número de placas"><br><br>
 
+            <h5>Carga la documentación de tu vehículo</h5>
+            <label for="licenciaConducir">Licencia Conducir</label>
+            <input type="file" id="licenciaConducir" form-control-file name="LicenciaConducir"
+                   accept="image/png, .jpeg, .jpg, image/gif"><br><br>
+            <label for="seguroCobertura">Seguro cobertura</label>
+            <input type="file" id="seguroCobertura" form-control-file name="SeguroCobertura"
+                   accept="image/png, .jpeg, .jpg, image/gif"><br><br>
+            <label for="tarjetaCirculacion">Tarjeta Circulacion</label>
+            <input type="file" id="tarjetaCirculacion" form-control-file name="tarjetaCirculacion"
+                   accept="image/png, .jpeg, .jpg, image/gif"><br><br>
 
-           
-                <h4>Datos automóvil</h4>
-                <input type="text" class="form-control2" placeholder="Modelo"><br>
-                <input type="text" class="form-control2" placeholder="Marca"><br>
-                <input type="text" class="form-control2" placeholder="Color"><br>
-                <input type="number" class="form-control2" placeholder="Capacidad"><br>
-                <input type="text" class="form-control2" placeholder="Antigüedad"><br>
-                <input type="text" class="form-control2" placeholder="Número de placas"><br><br>
-
-                <h5>Carga la documentación de tu vehículo</h5>
-                <label for="licenciaConducir">Licencia Conducir</label>
-                <input type="file" id="licenciaConducir" form-control-file name="LicenciaConducir"
-                       accept="image/png, .jpeg, .jpg, image/gif"><br><br>
-                <label for="seguroCobertura">Seguro cobertura</label>
-                <input type="file" id="seguroCobertura" form-control-file name="SeguroCobertura"
-                       accept="image/png, .jpeg, .jpg, image/gif"><br><br>
-                <label for="tarjetaCirculacion">Tarjeta Circulacion</label>
-                <input type="file" id="tarjetaCirculacion" form-control-file name="tarjetaCirculacion"
-                       accept="image/png, .jpeg, .jpg, image/gif"><br><br>
-            
             <div class="contenedor-inputs form-group">
                 <input type="submit" class="btn btn-primary" value="Registrar"><br>
             </div>
@@ -51,25 +51,6 @@
     </div>
 </section>
 
-
-<!-- login pop-up -->
-
-<div class="overlay" id="overlay">
-    <div class="popup" id="popup">
-        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-        <h3>Iniciar Sesión</h3>
-        <h4>Recuerda que debes usar tus credenciales universitarias.</h4>
-        <form action="">
-            <div class="contenedor-inputs">
-                <input type="email" placeholder="Correo Institucional">
-                <input type="password" placeholder="Contraseña">
-            </div>
-            <input type="submit" class="btn-submit" value="Iniciar Sesión">
-        </form>
-    </div>
-</div>
-
-<script src="../js/popup.js"></script>
 <script src="../js/registro.js"></script>
 <script src="../js/sweetalert.js"></script>
 

@@ -17,13 +17,13 @@
 </head>
 <body>
 
-<header class="container-lg mt-2 mb-3">
-    <div class="container">
-        <a class="navbar-brand" href="../index.php">Carpool BUAP</a>
-        <a id="btn-abrir-popup" class="btn btn-primary btn-abrir-popup float-right">Iniciar Sesión</a>
-    </div>
-</header>
 <!-- Navigation bar -->
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.php">Carpool BUAP</a>
+        <a id="btn-abrir-popup" class="btn btn-primary btn-abrir-popup">Iniciar Sesión</a>
+    </div>
+</nav>
 
 <main class="bg-light text-center">
     <form class="p-3" id="reg_frm">
@@ -132,7 +132,7 @@
                        accept="image/png, .jpeg, .jpg, image/gif"><br><br>
             </div>
         </div>
-        <button class="btn btn-primary btn-sm" type="submit" id="btn_reg">Registrarme</button>
+        <button class="btn btn-primary" type="submit" id="btn_reg">Registrarme</button>
     </form>
 </main>
 <!-- FORMULARIO REGISTO -->
