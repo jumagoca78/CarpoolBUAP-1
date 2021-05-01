@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/profile-edit.css">
 </head>
 <body>
 
@@ -30,9 +30,9 @@
                 </div>
                 <div class="mt-4">
                     <h5>Acerca de mi: </h5>
-                    <p>Este es un ejemplo de los 250 caracteres que puedes incluir en tu bio, esto para evitar
-                        sobrecargar de información un apartado que debería ser meramente informativo. Como puedes
-                        observar la cantidad de texto que puedes incluir es más que suficiente.</p>
+                    <textarea class="form-control overflow-hidden border-white bio"
+                              rows="9" dir="ltr" maxlength="250"
+                              placeholder="Escribe datos interesantes o relevantes."></textarea>
                 </div>
                 <div class="mt-4">
                     <h5>Formación: </h5>
@@ -48,15 +48,18 @@
                 </div>
                 <div class="mt-4">
                     <h5>Dirección: </h5>
-                    <p>Coyoacan 57 Lomas de San Miguel Puebla, Puebla</p>
+                    <input type="text" class="form-control text" placeholder="Dirección" id="address" name="address">
                 </div>
                 <div class="mt-4">
-                    <h5>Telefono: </h5>
-                    <p>2229172063</p>
+                    <h5>Teléfono: </h5>
+                    <input type="number" class="form-control" placeholder="Número de teléfono" id="phone" name="phone" />
                 </div>
                 <div class="text-center">
-                    <a id="btn-edit" class="btn btn-primary mt-3 btn-rounded" href="profile-edit.php">
-                        Editar
+                    <a id="btn-cancel" class="btn btn-secondary mt-3 btn-rounded" href="profile.php">
+                        Cancelar
+                    </a>
+                    <a id="btn-save" class="btn btn-primary mt-3 btn-rounded" href="">
+                        Guardar
                     </a>
                     <br><br>
                 </div>
