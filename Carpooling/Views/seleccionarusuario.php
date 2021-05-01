@@ -28,7 +28,7 @@
         </div>
 
         <div class="col mt-5">
-            <a class="btn btn-primary btn-lg btn-block" href="inicio.php">Conductor</a>
+            <a class="btn btn-primary btn-lg btn-block" href="registroauto.php">Conductor</a>
             <p class="fs-6 fw-lighter">¡Busca un conductor!</p>
         </div>
     </div>
