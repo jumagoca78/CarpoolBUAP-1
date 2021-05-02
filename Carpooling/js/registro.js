@@ -12,7 +12,7 @@ $('#conductorDiv').hide();
   in every  process  
 */
 function btnSaveLoad() {
-    $("#btn_reg").html('Registrando ...');
+    $("#btn_reg").html('Registrandote ...');
     $("#btn_reg").attr("disabled", true);
 }
 
@@ -62,19 +62,39 @@ $(function() {
   //To Keep the user's photo/image
   $("#reg_frm").unbind('submit').bind('submit', function(){
 
+	    var expresion = /\w+@alumno.buap.mx/;
+        
+        if($("#pwd").val() != $("#pwd_check").val())
+		{
+			swal("Incorrecto", "Las contraseñas no coinciden", "error");
+			return false;
+		}
+		if($("#pwd").val().length < 7)
+		{
+			swal("Contraseña insegura", "La contraseña es muy corta\nintenta con al menos siete caracteres alfanuméricos", "warning");
+			return false;
+		}
+
         var radio = $("input[name='radio_select']:checked").val();
         var nombre = $('#nombre').val();
         var apellidop = $('#apellidop').val();
         var apellidom = $('#apellidom').val();
         var edad = $('#edad').val();
-	var sexo = $('#sexo').val();
+		var sexo = $('#sexo').val();
         var matricula = $('#matricula').val();
         var email = $('#email').val();
-        if($("#conductorCheck").val() == "on") $tipo = "C";
-	if($("#pasajero").val() == "on") $tipo == "P";
-        if($("#conductorCheck").val() == "on" && $("#pasajero").val() == "on") $tipo = "A";		
-		
-        // This option is not ready yet!!!! BECAREFUL
+	if(!expresion.test(email))
+        { 
+	  swal("Correo no válido", "Ingresa tu correo institucional", "error");
+	  return false;
+        } 
+		var tipo = ""; 
+		if(document.getElementById("pasajero").checked)
+		  tipo = "P"; 
+		if(document.getElementById("conductorCheck").checked)  
+		  tipo = "C";
+		alert(tipo);
+           
         if (radio == 0) {
 
             cxt.drawImage(video, 0, 0, 300, 150);
@@ -101,8 +121,7 @@ $(function() {
                 }
             });
         } else if (radio == 1) {
-
-		$.ajax({
+	        $.ajax({
                 url: '../Models/process_img.php',
                 type: 'POST',
                 data: new FormData(this),
@@ -114,13 +133,26 @@ $(function() {
                 },
                 success: function(response){
                     btnSave();
-                    if (response.success == true) {
-                        swal("MENSAJE", response.messages, "success");
+		    if(tipo == "P")
+		    {
+                      if (response.user_success == true) {  
+						swal("REGISTRADO", response.messages, "success"); 						
                         $("#reg_frm")[0].reset();
                         $("#radiosfoto").click();
-                    } else {
+                      } else {
                         swal("MENSAJE", response.messages, "error");
-                    }
+                      }
+		   }
+		   else
+		   {	
+		      if(response.driver_success == true) {
+		      swal("REGISTRADO", response.messages, "success"); 						
+                        $("#reg_frm")[0].reset();
+                        $("#radiosfoto").click();
+                      } else {
+                        swal("MENSAJE", response.messages, "error");
+                      }	
+		   }
                 }
 				
 	           
