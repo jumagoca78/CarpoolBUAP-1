@@ -1,0 +1,31 @@
+main {
+  background-color: white;
+}
+
+header {
+  background-color: white;
+  color: rgba(36, 36, 199, 0.925);
+  margin-bottom: 10px;
+}
+
+.img {
+  width: 55px;
+  height: 55px;
+}
+
+.mensaje-autor {
+  background-color: rgb(214, 214, 214);
+  border-radius: 20px;
+  padding: 8px;
+  margin-left: 5px;
+}
+
+#enviar_mensaje {
+  width: 100px;
+  height: 100px;
+}
+
+#escribirMensaje {
+  width: 200px;
+  height: 100px;
+}
