@@ -72,9 +72,10 @@
 
 <!-- Navigation bar -->
 <nav class="navbar fixed-bottom navbar-light bg-light">
-    <a class="fas fa-home fa-2x" href="inicio.php"></a>
+    <a class="fas fa-home fa-2x" href="seleccionarusuario.php"></a>
+    <a class="fas fa-route fa-2x" href="inicio.php"></a>
     <a class="fas fa-user-alt fa-2x" href="profile.php"></a>
-    <a class="fas fa-exchange-alt fa-2x" href="seleccionarusuario.php"></a>
+    <a class="fas fa-comment fa-2x"></a>
 </nav>
 
 </body>
