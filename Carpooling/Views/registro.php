@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -132,6 +135,11 @@
         </div>
         <button class="btn btn-primary" type="submit" id="btn_reg">Registrarme</button>
     </form> 
+	<?php
+		  require_once "../Models/model-forms.php";
+		  
+		  ModelForms::mdlGetRegistro();
+       ?>
 </main>
 
 <!-- FORMULARIO REGISTO -->
