@@ -61,19 +61,34 @@ $(function() {
     }); 	 
   //To Keep the user's photo/image
   $("#reg_frm").unbind('submit').bind('submit', function(){
-
-	    var expresion = /\w+@alumno.buap.mx/;
+	  
+	  // Verifications!
+	  // Phone
+	  if($("#phone").val().length < 8)
+	  {
+            swal("MENSAJE", "Ingresa un número telefónico válido", "warning");
+	    return false;
+       	  }
+          // Password 
+	  var expresion = /\w+@alumno.buap.mx/;
         
-        if($("#pwd").val() != $("#pwd_check").val())
-		{
-			swal("Incorrecto", "Las contraseñas no coinciden", "error");
-			return false;
-		}
-		if($("#pwd").val().length < 7)
-		{
-			swal("Contraseña insegura", "La contraseña es muy corta\nintenta con al menos siete caracteres alfanuméricos", "warning");
-			return false;
-		}
+          if($("#pwd").val() != $("#pwd_check").val())
+	  {
+	     swal("Incorrecto", "Las contraseñas no coinciden", "error");
+	     return false;
+	  }
+	  if($("#pwd").val().length < 7)
+	  {
+	     swal("Contraseña insegura", "La contraseña es muy corta\nintenta con al menos siete caracteres alfanuméricos", "warning");
+	     return false;
+	  }
+	  
+	  // enrollment  
+	  if($("#matricula").val().length != 9)
+	  {
+	     swal("MENSAJE", "La matricula no encaja con la logitud esperada.\nPor favor, verifícalo", "error");
+	     return false;
+	  }
 
         var radio = $("input[name='radio_select']:checked").val();
         var nombre = $('#nombre').val();
@@ -83,17 +98,46 @@ $(function() {
 		var sexo = $('#sexo').val();
         var matricula = $('#matricula').val();
         var email = $('#email').val();
+	  
 	if(!expresion.test(email))
         { 
 	  swal("Correo no válido", "Ingresa tu correo institucional", "error");
 	  return false;
         } 
-		var tipo = ""; 
-		if(document.getElementById("pasajero").checked)
-		  tipo = "P"; 
-		if(document.getElementById("conductorCheck").checked)  
-		  tipo = "C";
-		alert(tipo);
+	var tipo = ""; 
+	if(document.getElementById("pasajero").checked)
+	  tipo = "P"; 
+	if(document.getElementById("conductorCheck").checked)  
+	  tipo = "C";
+	//Driver data 
+        if(tipo == "C")
+        {
+	  if($("#modelo").val() == "" ||
+	  $("#marca").val() == "" ||
+          $("#color").val() == "" ||
+	  $("#antiguedad").val() == "" ||
+	  $("#capacidad").val() == ""
+	  )
+	  {
+	    swal("MENSAJE", "Faltan datos por llenar", "warning");
+	    return false;
+	  }
+	  if($("#capacidad").val() < 4)
+	  {
+		swal("MENSAJE", "La capacidad del vehículo no puede ser menos de\n4 plazas", "warning");
+	        return false;
+	  }
+	  if($("#antiguedad").val() > 10)
+          {
+			 swal("MENSAJE", "La antiguedad del auto rebasa lo permitido.\nRecuerda que a lo más, debe ser no más de 10 años", "error");
+			 return false;
+	  }
+	  if($("#placa").val().length < 6 || $("#placa").val().length > 12)
+	  {
+		   	swal("MENSAJE", "¿Seguro que la placa es correacta?", "warning");
+	 		return false;
+	  }
+        }
            
         if (radio == 0) {
 
