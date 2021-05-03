@@ -111,6 +111,13 @@ session_start();
     </div>
 </div>
 
+ <?php
+		  require_once "Models/model-forms.php";
+		  
+		  ModelForms::mdlGetRegistro();	
+
+?>   
+    
 <!-- CDN SCRIPTS --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
