@@ -6,7 +6,7 @@
 
       try {
 		$hostname = "localhost";
-		$dbname = "carpoolingBUAP";
+		$dbname = "carpoolingbuap";
 		$username = "root";
 		$pw = "";
 	

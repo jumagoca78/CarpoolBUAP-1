@@ -33,9 +33,9 @@
         <canvas class="offcanvas none" id="canvas" width="450" height="400"></canvas>
         <!-- RADIO BUTTONS PARA ELEGIR EL MÉTODO DE FOTO-->
         <div class="btn-group btn-group-toggle mb-3" data-toggle="buttons">
-            <label class="btn btn-secondary active">
+            <label class="btn btn-secondary">
                 <input class="form-check-input" type="radio" name="radio_select" id="radiosphoto" autocomplete="off"
-                       value="1" checked> Seleccionar Foto
+                       value="1"> Seleccionar Foto
             </label>
             <label class="btn btn-secondary">
                 <input class="form-check-input" type="radio" name="radio_select" id="radiophoto" autocomplete="off"
@@ -141,7 +141,7 @@
         <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
         <h3>Iniciar Sesión</h3>
         <h4>Recuerda que debes usar tus credenciales universitarias.</h4>
-        <form action="">
+        <form action="seleccionarusuario.php">
             <div class="contenedor-inputs">
                 <input type="email" placeholder="Correo Institucional">
                 <input type="password" placeholder="Contraseña">
