@@ -47,7 +47,7 @@
     <a class="fas fa-home fa-2x" href="seleccionarusuario.php"></a>
     <a class="fas fa-route fa-2x" href="inicio.php"></a>
     <a class="fas fa-user-alt fa-2x" href="profile.php"></a>
-    <a class="fas fa-comment fa-2x"></a>
+    <a class="fas fa-comment fa-2x" href="chat.php"></a>
 </nav>
 
 <script
