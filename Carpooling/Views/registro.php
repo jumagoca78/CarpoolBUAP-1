@@ -28,9 +28,9 @@
         <div class="container-sm form-group">
             <input type="file" class="form-control-file" name="archivo" id="uploadphoto" accept="image/*"/>
             <video id="video" autoplay="autoplay" class="video_container none"></video>
-            <!--<button type="submit" class="btn btn-primary btn-lg" id="btn-save" onclick="captura()">Captura</button>-->
+            <button type="submit" class="btn btn-primary btn-lg none" id="btn-save" onclick="captura()">Captura</button>
         </div>
-        <canvas class="offcanvas" id="canvas"></canvas>
+        <canvas class="offcanvas none" id="canvas" width="450" height="400"></canvas>
         <!-- RADIO BUTTONS PARA ELEGIR EL MÉTODO DE FOTO-->
         <div class="btn-group btn-group-toggle mb-3" data-toggle="buttons">
             <label class="btn btn-secondary active">
