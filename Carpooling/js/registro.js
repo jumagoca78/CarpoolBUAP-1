@@ -129,7 +129,7 @@ $(function() {
 	  }
 	  if($("#antiguedad").val() > 10)
           {
-			 swal("MENSAJE", "La antiguedad del auto rebasa lo permitido.\nRecuerda que a lo más, debe ser no más de 10 años", "error");
+			 swal("MENSAJE", "La antiguedad del auto rebasa lo permitido.\nRecuerda que a lo más, debe ser de 10 años", "error");
 			 return false;
 	  }
 	  if($("#placa").val().length < 6 || $("#placa").val().length > 12)
