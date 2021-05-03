@@ -277,6 +277,7 @@ var localstream, canvas, video,  ctx;
        $(" #uploadphoto").addClass("none");
        $("#video").removeClass("none");
        $("#btn-save").removeClass("none");
+       $("#canvas").removeClass("none");	    
        turnOnCamera();
        document.getElementById("uploadphoto").value = null; 
     }); 
@@ -285,6 +286,8 @@ var localstream, canvas, video,  ctx;
        $("#uploadphoto").removeClass("none");
        $("#video").addClass("none");
        $("#btn-save").addClass("none");
+       $("#canvas").addClass("none");
+       ctx.clearRect(0, 0, canvas.width, canvas.height);	  
        turnOffCamera();
     });
 
