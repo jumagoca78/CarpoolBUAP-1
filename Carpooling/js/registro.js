@@ -141,6 +141,8 @@ $(function() {
            
         if (radio == 0) {
 
+	    swal("MENSAJE", "FOTO POR CAMARA RECIBIDA", "success");
+	    return false;
             cxt.drawImage(video, 0, 0, 300, 150);
             var data = canvas.toDataURL("image/jpeg");
             var info = data.split(",", 2);
