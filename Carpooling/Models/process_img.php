@@ -142,7 +142,7 @@
 					   $driver_validator['messages'] = 'ALGÚN ARCHIVO NO SE GUADÓ CORRECTAMENTE';
 			       }
 				   else
-				     $driver_validator['messages'] = 'SOLO SE PERMITE FORMATOS jpg, png, .gif, .ppeg Y jpeg.'; 
+				     $driver_validator['messages'] = 'SOLO SE PERMITE FORMATOS jpg, png, .gif, .ppeg Y jpeg.\nSE RECOMIENDA MINÚSCULA PARA LA EXTENSIÓN'; 
 			     }
 			  	 else
 				 {
@@ -154,7 +154,7 @@
 				$user_validator['messages'] = 'NO SE COPIO LA IMAGEN';
 			}
 		} else {
-			$user_validator['messages'] = 'SOLO SE PERMITE FORMATOS jpg, png, .gif, .ppeg Y jpeg.';
+			$user_validator['messages'] = 'SOLO SE PERMITE FORMATOS jpg, png, .gif, .ppeg Y jpeg.\nSE RECOMIENDA MINÚSCULA PARA LA EXTENSIÓN';
 		}
 	}
 	else
