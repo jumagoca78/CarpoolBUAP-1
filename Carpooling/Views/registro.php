@@ -138,7 +138,7 @@
 	<?php
 		  require_once "../Models/model-forms.php";
 		  
-		  ModelForms::mdlGetRegistro();
+		  //ModelForms::mdlGetRegistro();
        ?>
 </main>
 
