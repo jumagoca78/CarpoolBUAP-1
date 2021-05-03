@@ -96,22 +96,22 @@
         <div class="contenedor-inputs form-group conductor" id="conductorDiv">
             <h4>Datos automóvil</h4>
             <div class="mb-3">
-                <input type="text" class="form-control2" placeholder="Modelo" name="modelo" />
+                <input type="text" class="form-control2" placeholder="Modelo" id="modelo" name="modelo" />
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control2" placeholder="Marca" name="marca" />
+                <input type="text" class="form-control2" placeholder="Marca" id="marca" name="marca" />
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control2 text" placeholder="Color" name="color" />
+                <input type="text" class="form-control2 text" placeholder="Color" id="color" name="color" />
             </div>
             <div class="mb-3">
-                <input type="number" class="form-control2" placeholder="Capacidad" name="capacidad" />
+                <input type="number" class="form-control2" placeholder="Capacidad" id="capacidad" name="capacidad" />
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control2" placeholder="Antigüedad"  name="antiguedad" />
+                <input type="text" class="form-control2" placeholder="Antigüedad" id="antiguedad" name="antiguedad" />
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control2" placeholder="Número de placas" name="placa" />
+                <input type="text" class="form-control2" placeholder="Número de placas" id="placa" name="placa" />
             </div>
             <h5>Carga la documentación de tu vehículo</h5>
             <div class="mb-3">
