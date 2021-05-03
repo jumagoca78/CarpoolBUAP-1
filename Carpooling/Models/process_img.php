@@ -158,17 +158,21 @@
 		}
 	}
 	else
+	{
 	  $user_validator['messages'] = 'FALTA ADJUNTAR TU FOTO DE USUARIO';
+	  $driver_validator['messages'] = 'FALTA ADJUNTAR TU FOTO DE USUARIO';
+	}
+	
 
     if($tipo == "P")
-	{
+    {
 	header('Content-type: application/json; charset=utf-8');
 	echo json_encode($user_validator);
 	exit();
-	}
+    }
     else
-	{
+    {
 	  header('Content-type: application/json; charset=utf-8');
 	  echo json_encode($driver_validator);
 	  exit();
-	}
+    }
