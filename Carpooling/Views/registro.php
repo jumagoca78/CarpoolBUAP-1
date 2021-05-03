@@ -35,7 +35,7 @@
         <div class="btn-group btn-group-toggle mb-3" data-toggle="buttons">
             <label class="btn btn-secondary active">
                 <input class="form-check-input" type="radio" name="radio_select" id="radiosphoto" autocomplete="off"
-                       value="1" checked> Seleccionar Foto
+                       value="1"> Seleccionar Foto
             </label>
             <label class="btn btn-secondary">
                 <input class="form-check-input" type="radio" name="radio_select" id="radiophoto" autocomplete="off"
