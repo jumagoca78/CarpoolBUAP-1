@@ -1,0 +1,9 @@
+CREATE TABLE vehiculo (
+  placa varchar(9) not null primary key,
+  modelo varchar(9) not null,
+  color varchar(9) not null,
+  capacidad int not null,
+  antiguedad int not null,
+  id_conductor int not null,
+  foreign key (id_conductor) references conductor (id_conductor)
+);

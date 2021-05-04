@@ -1,0 +1,10 @@
+CREATE TABLE conductor (
+  id_conductor int primary key auto_increment,
+  email varchar(45) not null,
+  lincencia text not null,
+  seguro text not null,
+  tarjeta_circulacion text not null,
+  direccion_partida varchar(50),
+  direccion_destino varchar(50),
+  foreign key (email) references usuario (email) 
+);
