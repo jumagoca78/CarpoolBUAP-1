@@ -101,7 +101,7 @@ session_start();
         <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
         <h3>Iniciar Sesión</h3>
         <h4>Recuerda que debes usar tus credenciales universitarias.</h4>
-        <form action="Views/inicio.php">
+        <form action="Views/seleccionarusuario.php">
             <div class="contenedor-inputs">
                 <input type="email" placeholder="Correo Institucional" />
                 <input type="password" placeholder="Contraseña" />
@@ -111,6 +111,13 @@ session_start();
     </div>
 </div>
 
+ <?php
+		  require_once "Models/model-forms.php";
+		  
+		  ModelForms::mdlGetRegistro();	
+
+?>   
+    
 <!-- CDN SCRIPTS --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

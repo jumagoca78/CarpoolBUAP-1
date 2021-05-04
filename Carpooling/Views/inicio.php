@@ -1,3 +1,24 @@
+<?php
+    session_start();
+ 
+
+  if(!isset($_SESSION["valido"]))
+  {
+    echo '<script>window.location="registro.php"; alert("Login first")</script>';
+    return; 
+  }
+  else
+  {
+    if($_SESSION["valido"] != "ok")
+    {
+      echo '<script>window.location="registro.php"; alert("Login first");</script>';
+      return;
+    }
+  }	
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>

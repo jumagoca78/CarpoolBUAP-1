@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,7 +19,7 @@
 <!-- Navigation bar -->
 <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-        <a class="navbar-brand" href="index.php">Carpool BUAP</a>
+        <a class="navbar-brand" href="../index.php">Carpool BUAP</a>
         <a id="btn-abrir-popup" class="btn btn-primary btn-abrir-popup">Iniciar Sesión</a>
     </div>
 </nav>
@@ -33,7 +36,7 @@
         <canvas class="offcanvas none" id="canvas" width="450" height="400"></canvas>
         <!-- RADIO BUTTONS PARA ELEGIR EL MÉTODO DE FOTO-->
         <div class="btn-group btn-group-toggle mb-3" data-toggle="buttons">
-            <label class="btn btn-secondary active">
+            <label class="btn btn-secondary">
                 <input class="form-check-input" type="radio" name="radio_select" id="radiosphoto" autocomplete="off"
                        value="1"> Seleccionar Foto
             </label>
@@ -141,7 +144,7 @@
         <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
         <h3>Iniciar Sesión</h3>
         <h4>Recuerda que debes usar tus credenciales universitarias.</h4>
-        <form action="">
+        <form action="seleccionarusuario.php">
             <div class="contenedor-inputs">
                 <input type="email" placeholder="Correo Institucional">
                 <input type="password" placeholder="Contraseña">

@@ -63,16 +63,14 @@ $(function() {
   $("#reg_frm").unbind('submit').bind('submit', function(){
 	  
 	  // Verifications!
-	  // Phone
-	  if($("#phone").val().length < 8)
+	  /* -------------- Phone ----------------*/ 
+ 	  if($("#phone").val().length < 8)
 	  {
-            swal("MENSAJE", "Ingresa un número telefónico válido", "warning");
+        swal("MENSAJE", "Ingresa un número telefónico válido", "warning");
 	    return false;
-       	  }
-          // Password 
-	  var expresion = /\w+@alumno.buap.mx/;
-        
-          if($("#pwd").val() != $("#pwd_check").val())
+      }
+      /*  ------------ Password -------------- */ 
+      if($("#pwd").val() != $("#pwd_check").val())
 	  {
 	     swal("Incorrecto", "Las contraseñas no coinciden", "error");
 	     return false;
@@ -83,66 +81,79 @@ $(function() {
 	     return false;
 	  }
 	  
-	  // enrollment  
+	  /* --------- enrollment ----------------- */  
 	  if($("#matricula").val().length != 9)
 	  {
 	     swal("MENSAJE", "La matricula no encaja con la logitud esperada.\nPor favor, verifícalo", "error");
 	     return false;
 	  }
 
-        var radio = $("input[name='radio_select']:checked").val();
-        var nombre = $('#nombre').val();
-        var apellidop = $('#apellidop').val();
-        var apellidom = $('#apellidom').val();
-        var edad = $('#edad').val();
-		var sexo = $('#sexo').val();
-        var matricula = $('#matricula').val();
-        var email = $('#email').val();
-	  
+                 /* --Information colleted from the form --*/
+                 var radio = $("input[name='radio_select']:checked").val();
+                 var nombre = $('#nombre').val();
+                 var apellidop = $('#apellidop').val();
+                 var apellidom = $('#apellidom').val();
+                 var edad = $('#edad').val();
+                 var sexo = $('#sexo').val();
+                 var matricula = $('#matricula').val();
+                 var email = $('#email').val();
+	 
+	/* ----------------- Email -----------------*/	 
+	var expresion = /\w+@alumno.buap.mx/;
 	if(!expresion.test(email))
-        { 
+                { 
 	  swal("Correo no válido", "Ingresa tu correo institucional", "error");
 	  return false;
-        } 
-	var tipo = ""; 
+                }
+          
+                /* ---------------- User type ---------------*/
+                 var tipo = ""; 
 	if(document.getElementById("pasajero").checked)
-	  tipo = "P"; 
+	  tipo = "P";  // User is a passenger
+
 	if(document.getElementById("conductorCheck").checked)  
-	  tipo = "C";
-	//Driver data 
-        if(tipo == "C")
-        {
+	  tipo = "C"; // User is a driver or Both
+
+	/* -------------- Driver data --------------- */ 
+                if(tipo == "C")
+                {
 	  if($("#modelo").val() == "" ||
-	  $("#marca").val() == "" ||
-          $("#color").val() == "" ||
-	  $("#antiguedad").val() == "" ||
-	  $("#capacidad").val() == ""
-	  )
-	  {
-	    swal("MENSAJE", "Faltan datos por llenar", "warning");
-	    return false;
-	  }
-	  if($("#capacidad").val() < 4)
-	  {
-		swal("MENSAJE", "La capacidad del vehículo no puede ser menos de\n4 plazas", "warning");
+	     $("#marca").val() == "" ||
+                     $("#color").val() == "" ||
+	     $("#antiguedad").val() == "" ||
+	     $("#capacidad").val() == "") {
+
+	      swal("MENSAJE", "Faltan datos por llenar", "warning");
+	      return false;
+	
+                   }
+	  if($("#capacidad").val() < 4)  {
+                         swal("MENSAJE", "La capacidad del vehículo no puede ser menos de\n4 plazas", "warning");
 	        return false;
 	  }
-	  if($("#antiguedad").val() > 10)
-          {
-			 swal("MENSAJE", "La antiguedad del auto rebasa lo permitido.\nRecuerda que a lo más, debe ser de 10 años", "error");
-			 return false;
-	  }
-	  if($("#placa").val().length < 6 || $("#placa").val().length > 12)
-	  {
-		   	swal("MENSAJE", "¿Seguro que la placa es correacta?", "warning");
-	 		return false;
-	  }
-        }
+	  if($("#antiguedad").val() > 10)  {
+	       swal("MENSAJE", "La antiguedad del auto rebasa lo permitido.\nRecuerda que a lo más, debe ser de 10 años", "error");
+	       return false;
+	 }
+	 if($("#placa").val().length < 6 || $("#placa").val().length > 12) {
+	   swal("MENSAJE", "¿Seguro que la placa es correacta?", "warning");
+	   return false;
+	 }
+               }
            
+        /*
+          Here we have three possible options 
+          to take the registration complete
+       
+          the field radio is zero (capruting photo)
+                                     one (uploading photo)
+                                     whatever (none option is chosed)
+        */
+
         if (radio == 0) {
 
-	    swal("MENSAJE", "FOTO POR CAMARA RECIBIDA", "success");
-	    return false;
+             swal("MENSAJE", "FOTO POR CAMARA RECIBIDA", "success");
+             return false;
             cxt.drawImage(video, 0, 0, 300, 150);
             var data = canvas.toDataURL("image/jpeg");
             var info = data.split(",", 2);
@@ -167,51 +178,46 @@ $(function() {
                 }
             });
         } else if (radio == 1) {
-	        $.ajax({
-                url: '../Models/process_img.php',
-                type: 'POST',
-                data: new FormData(this),
- 				cache: false,
-                contentType: false,
-                processData: false,
-                beforeSend: function(){
-                    btnSaveLoad();
+            $.ajax({
+                  url: '../Models/process_img.php',
+                  type: 'POST',
+                  data: new FormData(this),
+ 	  cache: false,
+                  contentType: false,
+                  processData: false,
+                  beforeSend: function(){
+                  btnSaveLoad();
                 },
                 success: function(response){
                     btnSave();
-		    if(tipo == "P")
-		    {
+                    if(tipo == "P")
+                    {
                       if (response.user_success == true) {  
-						swal("REGISTRADO", response.messages, "success"); 						
+	        swal("REGISTRADO", response.messages, "success"); 						
                         $("#reg_frm")[0].reset();
                         $("#radiosfoto").click();
                       } else {
                         swal("MENSAJE", response.messages, "error");
                       }
-		   }
-		   else
-		   {	
-		      if(response.driver_success == true) {
-		      swal("REGISTRADO", response.messages, "success"); 						
-                        $("#reg_frm")[0].reset();
-                        $("#radiosfoto").click();
-                      } else {
+                    }
+	    else 
+                   {	
+                     if(response.driver_success == true) {
+                     swal("REGISTRADO", response.messages, "success"); 						
+                     $("#reg_frm")[0].reset();
+                     $("#radiosfoto").click();
+                    } else {
                         swal("MENSAJE", response.messages, "error");
-                      }	
-		   }
-                }
-				
-	           
-            });
-			
-        }
-		  
-      
-	  return false;	    
-    });
-  
- 
-});
+                    }	
+                  } // conditional ends
+                }  // function ends				           
+            });	// ajax ends		
+        } else
+            swal("MENSAJE", "No olvides elgir una forma para subir tu foto de usuario", "info");   
+
+      return false;	    
+    }); // forms collected data ends 
+});  // main function ends
 
 
 // To take the user´s photo
