@@ -109,14 +109,7 @@ session_start();
             <input type="submit" class="btn-submit" value="Iniciar Sesión">
         </form>
     </div>
-</div>
-
- <?php
-		  require_once "Models/model-forms.php";
-		  
-		  ModelForms::mdlGetRegistro();	
-
-?>   
+</div> 
     
 <!-- CDN SCRIPTS --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
