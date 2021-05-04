@@ -1,7 +1,8 @@
 <?php
     session_start();
- 
+    
 
+  /*  
   if(!isset($_SESSION["valido"]))
   {
     echo '<script>window.location="registro.php"; alert("Login first")</script>';
@@ -15,7 +16,7 @@
       return;
     }
   }	
-
+*/
 ?>
 
 
