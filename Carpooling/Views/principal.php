@@ -119,7 +119,7 @@ session_start();
 <script src="js/popup.js"></script>
 <script src="js/validate-email.js"></script>
 <script src="js/sweetalert.js"></script>
-<script src="Models/login.js"></script>
+<script src="js/login.js"></script>
 
 
 </body>

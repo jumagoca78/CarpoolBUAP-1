@@ -15,7 +15,7 @@ $(document).ready(function(){
         url: 'Models/login.php',
         data: usuario,
         success: function(msg) {
-          //alert(msg);
+          alert(msg);
           if(msg=='ok'){
             window.location = 'Views/seleccionarusuario.php';
           }else{

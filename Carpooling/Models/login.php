@@ -1,14 +1,28 @@
 <?php
-    require("conexion.php");
-    $link =  retornarConexion();
+    
+    include_once 'user.php';
+    include_once 'user_session.php';
 
-    $respuesta = mysqli_query($link,"SELECT * FROM usuario WHERE email = " ."'" . $_POST['email']."'"."AND password ="."'" . $_POST['password']."'");
-    $row_cnt = mysqli_num_rows ($respuesta);
+    $userSession = new UserSession();
+    $user = new User();
 
-    if($row_cnt!=0){
-        echo "ok";    
-    }else{
-        echo "onkt";
+    if(isset($_POST['email']) && isset($_POST['password'])){
+        
+        $userForm = $_POST['email'];
+        $passForm = $_POST['password'];
+
+        $user = new User();
+        if($user->userExists($userForm, $passForm)){
+            //echo "Existe el usuario";
+            $userSession->setCurrentUser($userForm);
+            $user->setUser($userForm);
+
+            echo "ok";
+        }else{
+            //echo "No existe el usuario";
+            $errorLogin = "Nombre de usuario y/o password incorrecto";
+            echo "oknt";
+            //include_once 'vistas/login.php';
+        }
     }
-
 ?>
