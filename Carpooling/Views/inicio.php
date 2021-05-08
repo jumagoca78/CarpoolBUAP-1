@@ -39,7 +39,7 @@
 
 <body>
 
-<main class="bg-light text-center">
+<main class="bg-light text-center" style="padding-bottom: 20px">
     <h2>Carpool BUAP</h2>
     <form action="" method="post">
         <div class="form-group">
@@ -49,7 +49,6 @@
         <button type="submit" class="btn btn-primary">Publicar Ruta</button>
     </form>
 </main>
-<br>
 <section class="bg-light text-center">
     <div class="container">
         <div class="mx-auto">

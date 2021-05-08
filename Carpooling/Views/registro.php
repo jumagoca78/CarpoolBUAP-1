@@ -20,7 +20,6 @@
 <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
         <a class="navbar-brand" href="../index.php">Carpool BUAP</a>
-        <a id="btn-abrir-popup" class="btn btn-primary btn-abrir-popup">Iniciar Sesión</a>
     </div>
 </nav>
 
@@ -160,5 +159,6 @@
 <script src="../libs/js/sweetalert.js"></script>
 <script src="../js/popup.js"></script>
 <script src="../js/registro.js"></script>
+<script src="../Models/login.js"></script>
 </body>
 </html>

@@ -15,24 +15,26 @@
 </head>
 <body>
 
-<div class="container-lg text-align-center mt-5 pt-5">
-<h1 class="mt-3 text-center">Bienvenido</h1><br>
-  <div class="row">
-    <div class="mx-auto m-5 text-center">
-      <div class="col">
-            <a class="btn btn-primary btn-lg btn-block" href="inicio.php">Pasajero</a>
-            <p class="fs-6 fw-lighter">¡Comparte tu viaje!</p>
-            <img src="../img/pasajero.png" class="icon">
+<main class="container-lg text-align-center mt-5">
+    <h1 class="mt-1 text-center">Bienvenido</h1><br>
+    <div class="row">
+        <div class="mx-auto m-5 text-center">
+            <div class="col">
+                <a class="btn btn-primary btn-lg btn-block" href="inicio.php">Pasajero</a>
+                <p class="fs-6 fw-lighter">¡Comparte tu viaje!</p>
+                <img src="../img/pasajero.png" class="icon">
+            </div><br>
+            <div class="col">
+                <a class="btn btn-primary btn-lg btn-block" href="inicio.php">Conductor</a>
+                <p class="fs-6 fw-lighter">¡Busca un conductor!</p>
+                <img src="../img/coche.png" class="icon">
+            </div>
         </div>
-
-        <div class="col mt-5">
-            <a class="btn btn-primary btn-lg btn-block" href="inicio.php">Conductor</a>
-            <p class="fs-6 fw-lighter">¡Busca un conductor!</p>
-            <img src="../img/coche.png" class="icon">
-        </div>
+    </div><br><br><br>
+    <div class="text-center">
+        <a class="btn btn-primary btn-danger btn-lg text-center">Cerrar Sesión</a>
     </div>
-  </div>    
-</div>
+</main>
 
 <!-- Navigation bar -->
 <nav class="navbar fixed-bottom navbar-light bg-light">
