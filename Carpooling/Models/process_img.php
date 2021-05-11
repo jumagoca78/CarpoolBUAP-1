@@ -28,18 +28,20 @@
 		   
                 //  data received
                 $nombre = $_POST["nombre"];
-			    $apellidop = $_POST["apellidop"];
-			    $apellidom = $_POST["apellidom"];
-			    $edad = $_POST["edad"];
-			    $sexo = $_POST["sexo"];
-			    $matricula = $_POST["matricula"];
-			    $email = $_POST["email"];
-			    $telefono = $_POST["phone"];
-			    $direccion = $_POST["address"];
-			    $password = $_POST["pwd"];	
+		$apellidop = $_POST["apellidop"];	
+		$apellidom = $_POST["apellidom"];
+		$edad = $_POST["edad"];
+		$sexo = $_POST["sexo"];
+		$matricula = $_POST["matricula"];
+		$email = $_POST["email"];
+	 	$telefono = $_POST["phone"];
+		$direccion = $_POST["address"];
+		$carrera = $_POST["carrera"];
+		$unidadAc = $_POST["unidadAc"];	
+		$password = $_POST["pwd"];	
 			   
 			    // SQL statement
-                $sql1 = 'INSERT INTO usuario (nombre, apellido_paterno, apellido_materno, edad, sexo, matricula, email, tipo, telefono, direccion, foto, tam_foto, password) VALUES (:nombre, :apellidop, :apellidom, :edad, :sexo, :matricula, :email, :tipo, :telefono, :direccion, :foto, :tam_foto, :password)'; 			   
+                $sql1 = 'INSERT INTO usuario (nombre, apellido_paterno, apellido_materno, edad, sexo, matricula, email, tipo, telefono, direccion, formacion, unidad_academica, foto, tam_foto, password) VALUES (:nombre, :apellidop, :apellidom, :edad, :sexo, :matricula, :email, :tipo, :telefono, :direccion, :formacion, :unidad_academica, :foto, :tam_foto, :password)'; 			   
                 // binding
                 $stmt1 = $link -> prepare($sql1);
                 $stmt1 -> bindValue(':nombre', $nombre, PDO::PARAM_STR);
@@ -52,7 +54,9 @@
 			    $stmt1 -> bindValue(':tipo', $tipo, PDO::PARAM_STR);
 			    $stmt1 -> bindValue(':telefono', $telefono, PDO::PARAM_INT);
 			    $stmt1 -> bindValue(':direccion', $direccion, PDO::PARAM_STR);
-                $stmt1 -> bindValue(':foto', $fileName, PDO::PARAM_STR); 			   
+                	    $stmt1 -> bindValue(':formacion', $carrera, PDO::PARAM_STR);
+			    $stmt1 -> bindValue(':unidad_academica', $unidadAc, PDO::PARAM_STR);
+			    $stmt1 -> bindValue(':foto', $fileName, PDO::PARAM_STR); 			   
 			    $stmt1 -> bindValue(':tam_foto', $_FILES["archivo"]["size"], PDO::PARAM_INT);
 			    $stmt1 -> bindValue(':password', $password, PDO::PARAM_STR);
 	
@@ -115,9 +119,9 @@
 							$capacidad = $_POST["capacidad"];
 							$antiguedad = $_POST["antiguedad"];
 						 
-						    $sql = 'INSERT INTO vehiculo (placa, modelo, marca, color, capacidad, antiguedad, id_conductor) VALUES (:placa, :modelo, :marca, :color, :capacidad, :antiguedad, :id_conductor)';
-						    $stmt = $link -> prepare($sql);
-						    $stmt -> bindValue(":id_conductor", $id[0], PDO::PARAM_INT);
+						        $sql = 'INSERT INTO vehiculo (placa, modelo, marca, color, capacidad, antiguedad, id_conductor) VALUES (:placa, :modelo, :marca, :color, :capacidad, :antiguedad, :id_conductor)';
+						        $stmt = $link -> prepare($sql);
+						        $stmt -> bindValue(":id_conductor", $id[0], PDO::PARAM_INT);
 							$stmt -> bindValue(":placa", $placa, PDO::PARAM_STR);
 							$stmt -> bindValue(":modelo", $modelo, PDO::PARAM_STR);
 							$stmt -> bindValue(":marca", $marca, PDO::PARAM_STR);
@@ -128,7 +132,7 @@
 							if($stmt -> execute())
 							{
 							  $registro_conductor = true;
-	     		        	  $driver_validator['driver_success'] = true;
+	     		        	  		  $driver_validator['driver_success'] = true;
 							  $driver_validator['messages'] = "!BIENVENIDO CONDUCTOR!";
 							}
 							else 
