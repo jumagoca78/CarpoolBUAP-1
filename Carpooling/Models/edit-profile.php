@@ -16,5 +16,5 @@
         $query = $user->connect()->prepare('UPDATE usuario SET telefono = :telefono, direccion = :direccion, perfil = :perfil WHERE  email = :email');
         $query->execute(['telefono' => $telefono, 'direccion' => $direccion, 'perfil' => $perfil, 'email' => $email]);
 
-        echo true;
+        echo "Edicion correcta";
     }

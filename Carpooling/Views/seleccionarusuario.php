@@ -15,6 +15,8 @@
         header('Location: ../index.php');
         exit;
     }
+
+    
 ?>
 
 <!DOCTYPE html>
@@ -44,12 +46,12 @@
                 <img src="../img/pasajero.png" class="icon">
             </div><br>
             <div class="col">
-                <a class="btn btn-primary btn-lg btn-block" href="inicio.php">Conductor</a>
+                <a id="btn_conductor" class="btn btn-primary btn-lg btn-block" href="inicio.php">Conductor</a>
                 <p class="fs-6 fw-lighter">¡Busca un conductor!</p>
                 <img src="../img/coche.png" class="icon">
             </div>
         </div>
-    </div><br><br>
+    </div>
     <!-- CERRAR SESION-->
     <div class="text-center">
         <a class="btn btn-primary btn-danger btn-lg text-center" href="../Models/logout.php">Cerrar Sesión</a>

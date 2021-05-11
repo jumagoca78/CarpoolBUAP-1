@@ -78,7 +78,12 @@ class User extends DB{
     public function getTelefono(){
         return $this->telefono;
     }
-    
+    public function getTipoUsuario(){
+        return $this->tipoUsuario;
+    }
+    public function getFoto(){
+        return $this->foto;
+    }
 }
 
 ?>

@@ -38,7 +38,7 @@
 
         <div class="text-left card-box">
             <div class="member-card pt-2 pb-2">
-                <div class="thumb-lg member-thumb mx-auto"><img src="../img/userejemplo.jpeg"
+                <div class="thumb-lg member-thumb mx-auto"><img src="../img/<?php echo $user->getFoto()?>"
                                                                 class="rounded-circle img-thumbnail"
                                                                 alt="profile-image"></div>
                 <div class="">
