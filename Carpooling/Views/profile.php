@@ -1,3 +1,22 @@
+<?php  
+    include_once '../Models/user.php';
+    include_once '../Models/user_session.php';
+    require_once "../Controllers/main-controller.php"; // The controller that opens the main view is included.
+
+    
+    $userSession = new UserSession();
+    $user = new User();
+
+    if(isset($_SESSION['email'])){
+        //echo "hay sesion"
+        $user->setUser($userSession->getCurrentUser());
+    
+    }else{
+        header('Location: ../index.php');
+        exit;
+    }
+?>
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -29,36 +48,34 @@
                                                                 class="rounded-circle img-thumbnail"
                                                                 alt="profile-image"></div>
                 <div class="">
-                    <h3>María Limón García</h3>
+                    <h3><?php echo $user->getNombre() ?></h3>
                     <p class="text-muted">Calificación <span>: </span><span><a class="fas fa-star"></a><a
                                     class="fas fa-star"></a><a class="fas fa-star"></a><a
                                     class="fas fa-star"></a></span></p>
                 </div>
                 <div class="mt-4">
                     <h5>Acerca de mi: </h5>
-                    <p>Este es un ejemplo de los 250 caracteres que puedes incluir en tu bio, esto para evitar
-                        sobrecargar de información un apartado que debería ser meramente informativo. Como puedes
-                        observar la cantidad de texto que puedes incluir es más que suficiente.</p>
+                    <p><?php echo $user->getPerfil()?></p>
                 </div>
                 <div class="mt-4">
                     <h5>Formación: </h5>
-                    <p>Ingeniería en Tecnlogías de la Información</p>
+                    <p><?php echo $user->getFormacion() ?></p>
                 </div>
                 <div class="mt-4">
                     <h5>Unidad Academica: </h5>
-                    <p>Facultad de Ciencias de la Computación</p>
+                    <p><?php echo $user->getUnidadAcademica()?></p>
                 </div>
                 <div class="mt-4">
                     <h5>Correo: </h5>
-                    <p>maria.limongar@alumno.buap.mx</p>
+                    <p><?php echo $user->getEmail()?></p>
                 </div>
                 <div class="mt-4">
                     <h5>Dirección: </h5>
-                    <p>Coyoacan 57 Lomas de San Miguel Puebla, Puebla</p>
+                    <p><?php echo $user->getDireccion()?></p>
                 </div>
                 <div class="mt-4">
                     <h5>Telefono: </h5>
-                    <p>2229172063</p>
+                    <p><?php echo $user->getTelefono()?></p>
                 </div>
                 <div class="text-center">
                     <a id="btn-edit" class="btn btn-primary mt-3 btn-rounded" href="profile-edit.php">

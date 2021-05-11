@@ -50,15 +50,35 @@ class User extends DB{
             $this->direccion = $currentUser['direccion'];
             $this->perfil = $currentUser['perfil'];
             $this->formacion = $currentUser['formacion'];
-            $this->unidad_academica = $currentUser['unidad_academica'];
+            $this->unidadAcademica = $currentUser['unidad_academica'];
             $this->foto = $currentUser['foto'];
             $this->password = $currentUser['password'];
         }
     }
 
     public function getNombre(){
-        return $this->nombre.' '.$this->apellidoPaterno.''.$this->apellidoMaterno;
+        return $this->nombre.' '.$this->apellidoPaterno.' '.$this->apellidoMaterno;
     }
+    public function getPerfil(){
+        return $this->perfil;
+    }
+    public function getFormacion(){
+        return $this->formacion;
+    }
+   
+    public function getUnidadAcademica(){
+        return $this->unidadAcademica;
+    }
+    public function getEmail(){
+        return $this->email;
+    }
+    public function getDireccion(){
+        return $this->direccion;
+    }
+    public function getTelefono(){
+        return $this->telefono;
+    }
+    
 }
 
 ?>

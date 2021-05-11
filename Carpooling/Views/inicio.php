@@ -1,22 +1,10 @@
 <?php
-    session_start();
-    
-
-  /*  
-  if(!isset($_SESSION["valido"]))
-  {
-    echo '<script>window.location="registro.php"; alert("Login first")</script>';
-    return; 
-  }
-  else
-  {
-    if($_SESSION["valido"] != "ok")
-    {
-      echo '<script>window.location="registro.php"; alert("Login first");</script>';
-      return;
+    /* SI HAY UNA SESION ABIERTA...*/
+    if(isset($_SESSION['user'])){
+        //echo "hay sesion";
+        $user->setUser($userSession->getCurrentUser());
+        include_once 'seleccionarusuario.php';
     }
-  }	
-*/
 ?>
 
 

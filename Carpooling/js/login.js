@@ -15,8 +15,8 @@ $(document).ready(function(){
         url: 'Models/login.php',
         data: usuario,
         success: function(msg) {
-          alert(msg);
-          if(msg=='ok'){
+          //alert(msg);
+          if(msg){
             window.location = 'Views/seleccionarusuario.php';
           }else{
             swal({

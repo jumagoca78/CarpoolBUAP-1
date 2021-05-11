@@ -4,7 +4,6 @@
     include_once 'user_session.php';
 
     $userSession = new UserSession();
-    $user = new User();
 
     if(isset($_POST['email']) && isset($_POST['password'])){
         
@@ -17,11 +16,11 @@
             $userSession->setCurrentUser($userForm);
             $user->setUser($userForm);
 
-            echo "ok";
+            echo $userSession->getCurrentUser();
         }else{
             //echo "No existe el usuario";
             $errorLogin = "Nombre de usuario y/o password incorrecto";
-            echo "oknt";
+            echo false;
             //include_once 'vistas/login.php';
         }
     }

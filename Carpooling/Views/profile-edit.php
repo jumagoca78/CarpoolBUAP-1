@@ -1,3 +1,22 @@
+<?php  
+    include_once '../Models/user.php';
+    include_once '../Models/user_session.php';
+    require_once "../Controllers/main-controller.php"; // The controller that opens the main view is included.
+
+    
+    $userSession = new UserSession();
+    $user = new User();
+
+    if(isset($_SESSION['email'])){
+        //echo "hay sesion"
+        $user->setUser($userSession->getCurrentUser());
+    
+    }else{
+        header('Location: ../index.php');
+        exit;
+    }
+?>
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -23,36 +42,37 @@
                                                                 class="rounded-circle img-thumbnail"
                                                                 alt="profile-image"></div>
                 <div class="">
-                    <h3>María Limón García</h3>
+                    <h3 id="nombre"><?php echo $user->getNombre() ?></h3>
                     <p class="text-muted">Calificación <span>: </span><span><a class="fas fa-star"></a><a
                                     class="fas fa-star"></a><a class="fas fa-star"></a><a
                                     class="fas fa-star"></a></span></p>
                 </div>
                 <div class="mt-4">
                     <h5>Acerca de mi: </h5>
-                    <textarea class="form-control overflow-hidden border-white bio"
+                    <textarea id="perfil" class="form-control overflow-hidden border-white bio"
                               rows="9" dir="ltr" maxlength="250"
-                              placeholder="Escribe datos interesantes o relevantes."></textarea>
+                              placeholder="Escribe datos interesantes o relevantes."><?php echo $user->getPerfil()?>
+                    </textarea>
                 </div>
                 <div class="mt-4">
                     <h5>Formación: </h5>
-                    <p>Ingeniería en Tecnlogías de la Información</p>
+                    <p id="formacion"><?php echo $user->getFormacion() ?></p>
                 </div>
                 <div class="mt-4">
                     <h5>Unidad Academica: </h5>
-                    <p>Facultad de Ciencias de la Computación</p>
+                    <p id="unidadAcademica"><?php echo $user->getUnidadAcademica()?></p>
                 </div>
                 <div class="mt-4">
                     <h5>Correo: </h5>
-                    <p>maria.limongar@alumno.buap.mx</p>
+                    <p id="correo"><?php echo $user->getEmail()?></p>
                 </div>
                 <div class="mt-4">
                     <h5>Dirección: </h5>
-                    <input type="text" class="form-control text" placeholder="Dirección" id="address" name="address">
+                    <input id="direccion" type="text" class="form-control text" placeholder="Dirección" id="address" name="address" value="<?php echo $user->getDireccion()?>">
                 </div>
                 <div class="mt-4">
                     <h5>Teléfono: </h5>
-                    <input type="number" class="form-control" placeholder="Número de teléfono" id="phone" name="phone" />
+                    <input id="telefono" type="number" class="form-control" placeholder="Número de teléfono" id="phone" name="phone" value="<?php echo $user->getTelefono()?>" />
                 </div>
                 <div class="text-center">
                     <a id="btn-cancel" class="btn btn-secondary mt-3 btn-rounded" href="profile.php">
@@ -74,6 +94,8 @@
     <a class="fas fa-user-alt fa-2x" href="profile.php"></a>
     <a class="fas fa-comment fa-2x" href="chat.php"></a>
 </nav>
+<script src="../js/editar-perfil.js"></script>
+
 
 </body>
 </html>

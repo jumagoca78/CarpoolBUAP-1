@@ -18,6 +18,12 @@
       include "Views/principal.php";
     } 
 
+    public function ctrIncludeSesionIniciada()
+    {
+      include "Views/seleccionarusuario.php";
+    } 
+    
+
   }	// MainController end
 
 

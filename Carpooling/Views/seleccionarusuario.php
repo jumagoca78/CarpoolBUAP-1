@@ -1,3 +1,22 @@
+<?php  
+    include_once '../Models/user.php';
+    include_once '../Models/user_session.php';
+    require_once "../Controllers/main-controller.php"; // The controller that opens the main view is included.
+
+    
+    $userSession = new UserSession();
+    $user = new User();
+
+    if(isset($_SESSION['email'])){
+        //echo "hay sesion"
+        $user->setUser($userSession->getCurrentUser());
+    
+    }else{
+        header('Location: ../index.php');
+        exit;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,7 +35,7 @@
 <body>
 
 <main class="container-lg text-align-center mt-5">
-    <h1 class="mt-1 text-center">Bienvenido</h1><br>
+    <h1 class="mt-1 text-center">Bienvenido <?php echo $user->getNombre() ?></h1><br>
     <div class="row">
         <div class="mx-auto m-5 text-center">
             <div class="col">
@@ -30,9 +49,10 @@
                 <img src="../img/coche.png" class="icon">
             </div>
         </div>
-    </div><br><br><br>
+    </div><br><br>
+    <!-- CERRAR SESION-->
     <div class="text-center">
-        <a class="btn btn-primary btn-danger btn-lg text-center">Cerrar Sesión</a>
+        <a class="btn btn-primary btn-danger btn-lg text-center" href="../Models/logout.php">Cerrar Sesión</a>
     </div>
 </main>
 
