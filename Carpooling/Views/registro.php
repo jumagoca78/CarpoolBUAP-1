@@ -26,9 +26,9 @@
 <main class="bg-light text-center">
     <form class="p-3" id="reg_frm">
         <h3>Regístrarse</h3>
-        <!-- TOMAR FOTO --> <!-- SELECCIONAR FOTO  NECESITA ARREGLOS-->
+        <!-- TOMAR FOTO --> 
         <div class="container-sm form-group">
-            <input type="file" class="form-control-file" name="archivo" id="uploadphoto" accept="image/*"/>
+            <input type="file" class="form-control-file none" name="archivo" id="uploadphoto" accept="image/*"/>
             <video id="video" autoplay="autoplay" class="video_container none"></video>
             <button type="button" class="btn btn-primary btn-lg none" id="btn-save" onclick="captura()">Captura</button>
         </div>
@@ -77,6 +77,12 @@
             <input type="email" class="form-control" placeholder="Correo (correo@alumno.buap.mx)" value='<?php if(isset($_POST["correo_ins"])) echo $_POST["correo_ins"]; ?>' id="email"
                    name="email" required />
         </div>
+	<div class="mb-3">
+            <input type="text" class="form-control" placeholder="Carrera" id="carrera" name="carrera" required />
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Unidad Académica" id="unidadAc" name="unidadAc" required />
+        </div>    
         <div class="mb-3">
             <input type="password" class="form-control" placeholder="Cotraseña" id="pwd"
                    name="pwd" required />
@@ -157,8 +163,6 @@
 <script src="../libs/js/jquery.min.js"></script>
 <script src="../libs/js/bootstrap.min.js"></script>
 <script src="../libs/js/sweetalert.js"></script>
-<script src="../js/popup.js"></script>
 <script src="../js/registro.js"></script>
-<script src="../Models/login.js"></script>
 </body>
 </html>
