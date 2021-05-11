@@ -45,7 +45,7 @@ class User extends DB{
             $this->sexo = $currentUser['sexo'];
             $this->matricula = $currentUser['matricula'];
             $this->email = $currentUser['email'];
-            $this->tipo = $currentUser['tipo'];
+            $this->tipoUsuario = $currentUser['tipo'];
             $this->telefono = $currentUser['telefono'];
             $this->direccion = $currentUser['direccion'];
             $this->perfil = $currentUser['perfil'];

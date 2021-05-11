@@ -10,13 +10,11 @@
     if(isset($_SESSION['email'])){
         //echo "hay sesion"
         $user->setUser($userSession->getCurrentUser());
-    
+        $tipoUsuario =  $user->getTipoUsuario();
     }else{
         header('Location: ../index.php');
         exit;
     }
-
-    
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +35,7 @@
 <body>
 
 <main class="container-lg text-align-center mt-5">
-    <h1 class="mt-1 text-center">Bienvenido <?php echo $user->getNombre() ?></h1><br>
+    <h1 class="mt-1 text-center">Bienvenido <?php echo $user->getNombre() ?></h1>
     <div class="row">
         <div class="mx-auto m-5 text-center">
             <div class="col">
@@ -46,7 +44,7 @@
                 <img src="../img/pasajero.png" class="icon">
             </div><br>
             <div class="col">
-                <a id="btn_conductor" class="btn btn-primary btn-lg btn-block" href="inicio.php">Conductor</a>
+                <a id="btn_conductor" class="btn btn-primary btn-lg btn-block">Conductor</a>
                 <p class="fs-6 fw-lighter">¡Busca un conductor!</p>
                 <img src="../img/coche.png" class="icon">
             </div>
@@ -65,6 +63,10 @@
     <a class="fas fa-user-alt fa-2x" href="profile.php"></a>
     <a class="fas fa-comment fa-2x" href="chat.php"></a>
 </nav>
+
+
+<script src="../js/sweetalert.js"></script>
+<script src="../js/seleccionarusuario.js"></script>
 
 </body>
 </html>

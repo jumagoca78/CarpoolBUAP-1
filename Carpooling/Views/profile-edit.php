@@ -78,7 +78,7 @@
                     <a id="btn-cancel" class="btn btn-secondary mt-3 btn-rounded" href="profile.php">
                         Cancelar
                     </a>
-                    <a id="btn-save" class="btn btn-primary mt-3 btn-rounded" href="">
+                    <a id="btn-save" class="btn btn-primary mt-3 btn-rounded">
                         Guardar
                     </a>
                     <br><br>
@@ -94,6 +94,7 @@
     <a class="fas fa-user-alt fa-2x" href="profile.php"></a>
     <a class="fas fa-comment fa-2x" href="chat.php"></a>
 </nav>
+<script src="../js/sweetalert.js"></script>
 <script src="../js/editar-perfil.js"></script>
 
 

@@ -2,7 +2,20 @@
 $(document).ready(function(){
     $("#btn-save").click(function(){
         //alert(direccion);
-        SubirDatos();
+        swal({
+          title: "¿Estas seguro?",
+          text: "Los datos anteriores se perderan!",
+          icon: "warning",
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((willDelete) => {
+          if (willDelete) {
+            SubirDatos();
+          } else {
+            swal("Edición cancelada!");
+          }
+        });
     });
 });
 
@@ -16,7 +29,12 @@ function SubirDatos(){
         url: '../Models/edit-profile.php',
         data: {perfil,direccion,telefono},
         success: function(msg) {
-          alert(msg);
+          swal("Perfil actualizado correctamente", {
+            icon: "success",
+          })
+          .then(() => {
+            window.location = '../Views/profile.php';
+          });
         },
         error: function() {
           alert('Error...');
