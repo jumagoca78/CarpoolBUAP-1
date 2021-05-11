@@ -24,11 +24,13 @@
 
       $telefono = $usuario -> telefono;
       $direccion = $usuario -> direccion;
+      $formacion = $usuario -> formacion;
+      $unidadAc = $usuario -> unidad_academica;
       $registro = $usuario -> registro;
       $foto = $usuario -> foto;
       $boton = '<a type="button" class="btn btn-sm btn-info" onclick="verfoto(\''.$foto.'\')" id="btnFoto_'.$matricula.' ">Foto</a>';
 
-      $data['data'][] = array($nombre, $apellidop, $apellidom, $edad, $sexo, $matricula, $email, $tipo, $telefono, $direccion, $registro, $boton);
+      $data['data'][] = array($nombre, $apellidop, $apellidom, $edad, $sexo, $matricula, $email, $tipo, $telefono, $direccion, $formacion, $unidadAc, $registro, $boton);
    }
   
    echo json_encode($data);
