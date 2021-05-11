@@ -36,6 +36,8 @@
 												<th>Tipo</th>
 												<th>Telefono</th>
 												<th>Direccion</th>
+												<th>Carrera</th>
+												<th>Unidad Académica</th>
 												<th>Registro</th>
 											        <th></th>
 											</tr>
