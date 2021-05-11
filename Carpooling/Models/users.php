@@ -4,7 +4,7 @@
    require_once("conection.php");
    $link = Conection::connect();
 
-   $sql = 'SELECT nombre, apellido_paterno, apellido_materno, edad, sexo, matricula, email, tipo, telefono, direccion, foto, registro FROM usuario ';
+   $sql = 'SELECT nombre, apellido_paterno, apellido_materno, edad, sexo, matricula, email, tipo, telefono, direccion, formacion, unidad_academica, foto, registro FROM usuario ';
    $stmt = $link -> query($sql);
    $usuarios =  $stmt -> fetchAll(PDO::FETCH_OBJ);
 
