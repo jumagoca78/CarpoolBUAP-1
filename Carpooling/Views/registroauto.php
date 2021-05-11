@@ -17,43 +17,42 @@
 <main class="bg-light text-center mx-auto">
     <form class="p-3" id="reg_frm">
         <div class="form-group">
-            <h3>Datos automóvil</h3>
+        <h4>Datos automóvil</h4>
             <div class="mb-3">
-                <input type="text" class="form-control2" placeholder="Modelo">
+                <input type="text" class="form-control2" placeholder="Modelo" id="modelo" name="modelo" />
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control2" placeholder="Marca">
+                <input type="text" class="form-control2" placeholder="Marca" id="marca" name="marca" />
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control2 text" placeholder="Color">
+                <input type="text" class="form-control2 text" placeholder="Color" id="color" name="color" />
             </div>
             <div class="mb-3">
-                <input type="number" class="form-control2" placeholder="Capacidad">
+                <input type="number" class="form-control2" placeholder="Capacidad" id="capacidad" name="capacidad" />
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control2" placeholder="Antigüedad">
+                <input type="text" class="form-control2" placeholder="Antigüedad" id="antiguedad" name="antiguedad" />
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control2" placeholder="Número de placas">
+                <input type="text" class="form-control2" placeholder="Número de placas" id="placa" name="placa" />
             </div>
-
-            <h4>Carga la documentación de tu vehículo</h4>
+            <h5>Carga la documentación de tu vehículo</h5>
             <div class="mb-3">
                 <label for="licenciaConducir">Licencia Conducir</label>
-                <input type="file" id="licenciaConducir" form-control name="LicenciaConducir"
-                       accept="image/png, .jpeg, .jpg, image/gif">
+                <input type="file" id="licenciaConducir" form-control-file name="licencia"
+                       accept="image/png, .jpeg, .jpg, image/gif" />
             </div>
             <div class="mb-3">
                 <label for="seguroCobertura">Seguro cobertura</label>
-                <input type="file" id="seguroCobertura" form-control name="SeguroCobertura"
-                       accept="image/png, .jpeg, .jpg, image/gif">
+                <input type="file" id="seguroCobertura"  name="seguro" form-control-file
+                       accept="image/png, .jpeg, .jpg, image/gif" />
             </div>
             <div class="mb-3">
                 <label for="tarjetaCirculacion">Tarjeta Circulacion</label>
-                <input type="file" id="tarjetaCirculacion" form-control name="tarjetaCirculacion"
-                       accept="image/png, .jpeg, .jpg, image/gif"><br><br>
+                <input type="file" id="tarjetaCirculacion" form-control-file name="tarjetaCirc"
+                       accept="image/png, .jpeg, .jpg, image/gif" /><br><br>
             </div>
-            <button class="btn btn-primary" type="submit" id="btn_reg">Registrar Auto</button><br><br>
+            <button id="btn_registrarAuto" class="btn btn-primary" type="button" id="btn_reg">Registrar Auto</button><br><br>
         </div>
     </form>
 </main>
@@ -66,8 +65,9 @@
     <a class="fas fa-comment fa-2x" href="chat.php"></a>
 </nav>
 
-<script src="../js/registro.js"></script>
-
+<script src="../js/registro_vehiculo.js"></script>
+<script src="../js/sweetalert.js"></script>
+<script src="../js/editar-perfil.js"></script>
 </body>
 </html>
 
