@@ -193,14 +193,17 @@ $(function() {
                     if(tipo == "P")
                     {
                       if (response.user_success == true) {  
-	        swal("REGISTRADO", response.messages, "success"); 						
+	                swal("REGISTRADO", response.messages, "success"); 						
                         $("#reg_frm")[0].reset();
                         $("#radiosfoto").click();
-                      } else {
+			setTimeout(function() { 
+				window.location = "../index.php"; 
+			}, 3000);
+                        } else {
                         swal("MENSAJE", response.messages, "error");
                       }
-                    }
-	    else 
+                   }
+	           else 
                    {	
                      if(response.driver_success == true) {
                      swal("REGISTRADO", response.messages, "success"); 						
@@ -295,7 +298,7 @@ var localstream, canvas, video,  ctx;
        $("#video").addClass("none");
        $("#btn-save").addClass("none");
        $("#canvas").addClass("none");
-       ctx.clearRect(0, 0, canvas.width, canvas.height);	  
+       if(typeof(ctx) != "undefined") ctx.clearRect(0, 0, canvas.width, canvas.height);	  
        turnOffCamera();
     });
 
