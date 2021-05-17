@@ -60,7 +60,7 @@
 </nav>
 
 <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcjCICzAu6yZWsdFNaCJNd4pKMYMVFMqo&map_ids=f6325ac47accdc99&callback=initMap&libraries=&v=weekly">
+        src="https://maps.googleapis.com/maps/api/js?key=?">
 </script>
 
 </body>
